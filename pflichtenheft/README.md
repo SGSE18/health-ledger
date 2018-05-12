@@ -91,9 +91,14 @@ https://docs.google.com/spreadsheets/d/1EZi6x1SPVpHn4N_kmLJ6R4SVIBvgqvcm2nRK712T
 # 3 Technische Beschreibung (Nils/Kevin/Cem)
 
 ## 3.1 Systemübersicht
-* Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
-* Schnittstellenbeschreibung
-* Kommunikationsprotokolle, Datenformate
+![Systemarchitekturdiagramm](images/Systemarchitektur.png "Systemarchitekturdiagramm")
+
+### Schnittstellenbeschreibung
+Durch das Hyperledger Fabric Framework, wird bereits eine gRPC-Schnittstelle zu
+den Peers bereitgestellt. Diese wird von der Applikation verwendet, um Daten aus
+dem Distributed Ledger abzufragen bzw. zu aktualisieren. Mittels Protocol
+Buffers werden die Daten, in ein Byte-Array Datenformat serialisiert und an den
+Peer übertragen.
 
 ## 3.2 Softwarearchitektur
 * Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
