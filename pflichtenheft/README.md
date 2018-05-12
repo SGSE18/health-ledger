@@ -67,9 +67,54 @@ HealthLedger bringt die Idee der Krankenakte nach zeitgemäßem technischen Stan
 * Webapp
 
 ### 2.2.3 Qualitätsmerkmale (Fynn/Patrick)
-* Externe Qualitätsanforderungen: Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit
+
+Qualitätsmerkmal | sehr gut | gut | normal | nicht relevant
+---|---|---|---|---
+**Zuverlässigkeit** | | | | |
+Fehlertoleranz |X|-|-|-|
+Wiederherstellbarkeit |X|-|-|-|
+Ordnungsmäßigkeit |X|-|-|-|
+Richtigkeit |X|-|-|-|
+Konformität |-|X|-|-|
+**Benutzerfreundlichkeit** | | | | |
+Installierbarkeit |-|-|X|-|
+Verständlichkeit |X|-|-|-|
+Erlernbarkeit |-|X|-|-|
+Bedienbarkeit |-|X|-|-|
+**Performance** | | | | |
+Zeitverhalten |-|-|X|-|
+Effizienz|-|-|-|X|
+**Sicherheit** | | | | |
+Analysierbarkeit |X|-|-|-|
+Modifizierbarkeit |-|-|-|X|
+Stabilität |X|-|-|-|
+Prüfbarkeit |X|-|-|-|
+
 
 ## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
+
+![Loginscreen](images/mockup_login.png "Loginscreen")
+
+Behandlung festhalten:
+
+![Behandlungscreen](images/mockup_behandlung.png "Behandlungsscreen")
+
+Smart-Rezept ausstellen:
+
+![Rezeptscreen](images/mockup_behandlung_rezept.png "Rezeptscreen")
+
+Krankschreibung ausstellen:
+
+![Attestscreen](images/mockup_behandlung_attest.png "Attestscreen")
+
+Krankenakten einsehen:
+
+![Krankenakte](images/mockup_krankenakte.png "Krankenakte")
+
+Krankenakte einsehen:
+
+![Krankenaktedetails](images/mockup_krankenakte_details.png "Krankenaktendetails")
+
 * GUI-Mockups passend zu User Stories
 * Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
 
