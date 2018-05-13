@@ -139,11 +139,11 @@ https://docs.google.com/spreadsheets/d/1EZi6x1SPVpHn4N_kmLJ6R4SVIBvgqvcm2nRK712T
 ![Systemarchitekturdiagramm](images/Systemarchitektur.png "Systemarchitekturdiagramm")
 
 ### Schnittstellenbeschreibung
-Durch das Hyperledger Fabric Framework, wird bereits eine gRPC-Schnittstelle zu
-den Peers bereitgestellt. Diese wird von der Applikation verwendet, um Daten aus
-dem Distributed Ledger abzufragen bzw. zu aktualisieren. Mittels Protocol
-Buffers werden die Daten, in ein Byte-Array Datenformat serialisiert und an den
-Peer übertragen.
+Das Hyperledger Fabric Framework stellt bereits eine gRPC-Schnittstelle zu den
+Peers bereit. Diese Schnittstelle wird von der Applikation verwendet, um Daten
+aus dem Distributed Ledger abzufragen bzw. zu aktualisieren. Mittels Protocol
+Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Peer
+übertragen.
 
 ## 3.2 Softwarearchitektur
 * Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
