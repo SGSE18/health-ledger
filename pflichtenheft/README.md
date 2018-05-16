@@ -149,9 +149,22 @@ Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Pee
 ![Softwarearchitektur](images/Softwarearchitektur.png "Softwarearchitektur")
 
 ## 3.3 Datenmodell
-* Konzeptionelles Analyseklassendiagramm
+
+![Datenmodell](images/Benutzermodel_Krankenakte.png "Datenmodell der Krankenakte")
+
+![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
 
 ## 3.4 Abläufe
+Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
+der Blockchain interagiert.
+
+![Behandelung erstellen](images/Aktivitätsdiagram_Behandelung_erstellt.png "Behandelung erstellen")
+
+Im folgenden Usecase wird dargestellt, wie ein User wie beispielsweise die Krankenkasse an die
+benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob er die benötigten
+Informationen herrausgeben möchte.
+
+![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
 * Aktivitätsdiagramme für relevante Use Cases
 * Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
