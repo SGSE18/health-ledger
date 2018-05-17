@@ -113,7 +113,7 @@ Arzt: Krankenakten einsehen:
 
 Arzt: Behandlung einsehen:
 
-![Krankenaktedetails](images/arzt_krankenakte.png "Krankenaktendetails")
+![Krankenaktedetails](images/arzt_krankenakte_.png "Krankenaktendetails")
 
 Versicherung: Patientenübersicht einsehen
 
@@ -129,6 +129,7 @@ Versicherung: Behandlung einsehen
 
 * GUI-Mockups passend zu User Stories
 * Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
+![Komplettes Ablaufdiagramm](images/diagram_mockup_state.png "Komplettes Ablaufdiagramm")
 
 ## 2.4 Anforderungen im Detail (Alle)
 * User Stories mit Akzeptanzkritierien
