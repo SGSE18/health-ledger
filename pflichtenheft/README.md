@@ -95,37 +95,50 @@ Prüfbarkeit |X|-|-|-|
 
 ![Loginscreen](images/login.png "Loginscreen")
 
-Arzt: Behandlung festhalten:
+Apotheker: Offene Rezepte - Übersicht
 
-![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
+![Rezeptübersicht](images/apotheker_offene_rezeptbersicht.png "Offene Rezepte - Übersicht")
+
+Apotheker: Rezeptdetails
+
+![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
+
+Arbeitgeber: Mitarbeiterübersicht
+
+![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
 Arzt: Smart-Rezept ausstellen:
 
 ![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
 
+Arzt: Behandlung festhalten:
+
+![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
+
 Arzt: Krankschreibung ausstellen:
 
 ![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
 
-Arzt: Krankenakten einsehen:
+Arzt/Patient/Versicherung: Behandlung einsehen:
 
-![Krankenakte](images/arzt_krankenakte_einsehen.png "Krankenakte")
+![Krankenakte](images/arztpatientversicherung_behandlung_einsehen "Behandlung einsehen")
 
-Arzt: Behandlung einsehen:
+Arzt/Patient/Versicherung: Krankenakte:
 
-![Krankenaktedetails](images/arzt_krankenakte_.png "Krankenaktendetails")
+![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-Versicherung: Patientenübersicht einsehen
+Arzt/Versicherung: Patientenübersicht
 
-![Patientenübersicht](images/versicherung_patientenübersicht.png "Patientenübersicht")
+![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-Versicherung: Patientenakten einsehen
+Arzt/Versicherung/Apotheker/Arbeitgeber: QR Code scannen
 
-![Patientenakte](images/versicherung_patientenakte.png "Patientenakte")
+![QR-Code scannen](images/arztversicherungapothekerarbeitgeber_qr_code_scannen.png "QR Code scannen")
 
-Versicherung: Behandlung einsehen
+Patient: Einsichtsanfragen einsehen:
 
-![Behandlungsscreen](images/versicherung_behandlung_einsehen.png "Behandlungsdetails")
+![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
+
 
 * GUI-Mockups passend zu User Stories
 * Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
