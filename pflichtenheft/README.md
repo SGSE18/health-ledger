@@ -139,12 +139,28 @@ Patient: Einsichtsanfragen einsehen:
 
 ![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
 
+Zustandsdiagramm des Gesamtsystems:
 
 ![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
+
+Detailliertes Zustandsdiagramm der Patientenansicht:
+
 ![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
+
+Detailliertes Zustandsdiagramm der Arztansicht:
+
 ![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
+
+Detailliertes Zustandsdiagramm der Versichereransicht:
+
 ![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
+
+Detailliertes Zustandsdiagramm der Apothekeransicht:
+
 ![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
+
+Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
+
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
 ## 2.4 Anforderungen im Detail (Alle)
