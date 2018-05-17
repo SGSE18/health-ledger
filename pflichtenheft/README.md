@@ -121,7 +121,7 @@ Arzt: Krankschreibung ausstellen:
 
 Arzt/Patient/Versicherung: Behandlung einsehen:
 
-![Krankenakte](images/arztpatientversicherung_behandlung_einsehen "Behandlung einsehen")
+![Krankenakte](images/arztpatientversicherung_behandlung_einsehen.png "Behandlung einsehen")
 
 Arzt/Patient/Versicherung: Krankenakte:
 
