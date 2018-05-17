@@ -140,9 +140,12 @@ Patient: Einsichtsanfragen einsehen:
 ![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
 
 
-* GUI-Mockups passend zu User Stories
-* Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-![Komplettes Ablaufdiagramm](images/diagram_mockup_state.png "Komplettes Ablaufdiagramm")
+![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
+![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
+![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
+![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
+![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
+![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
 ## 2.4 Anforderungen im Detail (Alle)
 * User Stories mit Akzeptanzkritierien
