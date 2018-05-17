@@ -93,27 +93,39 @@ Prüfbarkeit |X|-|-|-|
 
 ## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
 
-![Loginscreen](images/mockup_login.png "Loginscreen")
+![Loginscreen](images/login.png "Loginscreen")
 
-Behandlung festhalten:
+Arzt: Behandlung festhalten:
 
-![Behandlungscreen](images/mockup_behandlung.png "Behandlungsscreen")
+![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
 
-Smart-Rezept ausstellen:
+Arzt: Smart-Rezept ausstellen:
 
-![Rezeptscreen](images/mockup_behandlung_rezept.png "Rezeptscreen")
+![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
 
-Krankschreibung ausstellen:
+Arzt: Krankschreibung ausstellen:
 
-![Attestscreen](images/mockup_behandlung_attest.png "Attestscreen")
+![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
 
-Krankenakten einsehen:
+Arzt: Krankenakten einsehen:
 
-![Krankenakte](images/mockup_krankenakte.png "Krankenakte")
+![Krankenakte](images/arzt_krankenakte_einsehen.png "Krankenakte")
 
-Krankenakte einsehen:
+Arzt: Behandlung einsehen:
 
-![Krankenaktedetails](images/mockup_krankenakte_details.png "Krankenaktendetails")
+![Krankenaktedetails](images/arzt_krankenakte.png "Krankenaktendetails")
+
+Versicherung: Patientenübersicht einsehen
+
+![Patientenübersicht](images/versicherung_patientenübersicht.png "Patientenübersicht")
+
+Versicherung: Patientenakten einsehen
+
+![Patientenakte](images/versicherung_patientenakte.png "Patientenakte")
+
+Versicherung: Behandlung einsehen
+
+![Behandlungsscreen](images/versicherung_behandlung_einsehen.png "Behandlungsdetails")
 
 * GUI-Mockups passend zu User Stories
 * Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
