@@ -29,7 +29,7 @@ Features von HealthLedger
 * Durch Chaincode-Verschreibungen wird die papierlose Medikation ermöglicht. Nicht nur ist die Wahrscheinlichkeit einer Falschverabreichung rigoros eingedämmt, die Transparenz der Wechselseitigkeit von Eigen- und Versicherungsleistung nimmt auch deutlich zu. So sind bereits vor Ankunft in der Apotheke alle Fragen zur Finanzierung der Therapie geklärt.
 
 * Gemessen an den sehr unterschiedlichen Bedürfnissen und Hintergründen der Systemnutzer liefert HealthLedger maßgeschneiderte Oberflächen für das Anwenderspektrum zwischen medizinischem Laien, Facharzt und Versicherungsdienstleister. Im gleichen Zuge kann als Zusatzvorteil eine selektive Kurzeinsicht gewährt werden, um zum Beispiel den Arbeitgeber frühzeitig und papierlos über eine Krankmeldung zu informieren.
- 
+
 HealthLedger bringt die Idee der Krankenakte nach zeitgemäßem technischen Standard in das 21. Jahrhundert. Anders als in Abrechnungs-Softwaresystemen, die gezielt für Versicherungseinrichtungen an den Markt gebracht wurden und Krankendokumente nur als bruchstückhafte Artefakte erzeugen, steht für HealthLedger die Kooperation mit dem Patienten im klaren Fokus. HealthLedger entfernt die unpersönliche Versicherungsbuchhaltung von jenem, was im Mittelpunkt stehen sollte: dem Menschen.
 
 
@@ -93,27 +93,39 @@ Prüfbarkeit |X|-|-|-|
 
 ## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
 
-![Loginscreen](images/mockup_login.png "Loginscreen")
+![Loginscreen](images/login.png "Loginscreen")
 
-Behandlung festhalten:
+Arzt: Behandlung festhalten:
 
-![Behandlungscreen](images/mockup_behandlung.png "Behandlungsscreen")
+![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
 
-Smart-Rezept ausstellen:
+Arzt: Smart-Rezept ausstellen:
 
-![Rezeptscreen](images/mockup_behandlung_rezept.png "Rezeptscreen")
+![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
 
-Krankschreibung ausstellen:
+Arzt: Krankschreibung ausstellen:
 
-![Attestscreen](images/mockup_behandlung_attest.png "Attestscreen")
+![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
 
-Krankenakten einsehen:
+Arzt: Krankenakten einsehen:
 
-![Krankenakte](images/mockup_krankenakte.png "Krankenakte")
+![Krankenakte](images/arzt_krankenakte_einsehen.png "Krankenakte")
 
-Krankenakte einsehen:
+Arzt: Behandlung einsehen:
 
-![Krankenaktedetails](images/mockup_krankenakte_details.png "Krankenaktendetails")
+![Krankenaktedetails](images/arzt_krankenakte.png "Krankenaktendetails")
+
+Versicherung: Patientenübersicht einsehen
+
+![Patientenübersicht](images/versicherung_patientenübersicht.png "Patientenübersicht")
+
+Versicherung: Patientenakten einsehen
+
+![Patientenakte](images/versicherung_patientenakte.png "Patientenakte")
+
+Versicherung: Behandlung einsehen
+
+![Behandlungsscreen](images/versicherung_behandlung_einsehen.png "Behandlungsdetails")
 
 * GUI-Mockups passend zu User Stories
 * Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
