@@ -174,10 +174,22 @@ Informationen herrausgeben möchte.
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-* Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-* Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-* Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-* Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+
+### Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
+* Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
+
+### Verwendete Technologien (Programmiersprache, Frameworks, etc.)
+#### Backend 
+* Hyperledger Fabric Framework
+* Smart Contracts: Go (Programmiersprache) 
+
+#### Frontend 
+* Webapplikation mit Shared Codebase für alle Plattformen (Electron)
+* HTML5, JavaScript
+
+### Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
+
+### Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
 
 ## 4.2 Verantwortlichkeiten
 * Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
