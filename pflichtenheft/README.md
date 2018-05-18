@@ -175,28 +175,47 @@ Informationen herrausgeben möchte.
 
 ## 4.1 Annahmen
 
-### Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
+### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
 * Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
 
-### Verwendete Technologien (Programmiersprache, Frameworks, etc.)
+### 4.1.2 Verwendete Technologien (Programmiersprache, Frameworks, etc.)
 #### Backend 
 * Hyperledger Fabric Framework
 * Smart Contracts: Go (Programmiersprache) 
 
 #### Frontend 
-* Webapplikation mit Shared Codebase für alle Plattformen (Electron)
+* Webapplikation mit Shared Codebase für alle Plattformen
 * HTML5, JavaScript
 
-### Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
+### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
 
-### Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
 
 ## 4.2 Verantwortlichkeiten
-* Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-* Rollendefinition und Zuordnung
+### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
+### 4.2.2 Rollendefinition und Zuordnung
+
+#### Frontend-Entwickler
+Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
+
+#### Backend-Entwickler
+Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
 
 ## 4.3 Grober Projektplan
-* Meilensteine
+### Meilensteine
+* KW 21 (21.06)
+  * Abgabe Pflichtenheft
+* KW 22 (28.06) / M1
+  * Einarbeitung: Frameworks
+* KW 23 (04.07) / M2
+  * SW-Architektur
+* KW 24 (11.07) / M3
+  * Implementierung: Funktionale Anforderungen
+* KW 25 (18.07) / M4
+  * Softwaretests abgeschlossen
+  * Beginn Projektdokumentation
+* KW 26 (25.07) 
+  * Präsentation / Software-Demo
 
 # 5 Anhänge
 
