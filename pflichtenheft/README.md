@@ -182,7 +182,7 @@ Informationen herrausgeben möchte.
 ### 4.1.2 Verwendete Technologien (Programmiersprache, Frameworks, etc.)
 #### Backend 
 * Hyperledger Fabric Framework
-* Smart Contracts: Go (Programmiersprache) 
+* Smart Contracts: JavaScript 
 
 #### Frontend 
 * Webapplikation mit Shared Codebase für alle Plattformen
@@ -195,6 +195,14 @@ Informationen herrausgeben möchte.
 ## 4.2 Verantwortlichkeiten
 ### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
 ### 4.2.2 Rollendefinition und Zuordnung
+#### Projektleiter
+Überwacht den Projektfortschritt und stellt eine reibungslose Kommunikation zwischen den einzelnen Entwicklungsbereichen sicher.
+
+#### Softwarearchitekt
+Entwirft den Aufbau von Softwaresystemen und trifft grundlegende Entscheidungen über das Zusammenspiel ihrer diversen Komponenten.
+
+#### Test-Entwickler
+Entwickelt Modultests, Systemtests und Integrationstests um die spezifikationsgerechte, fehlerfreie Funktion einzelner Module, Modulgruppen und des ganzen System sicherzustellen.
 
 #### Frontend-Entwickler
 Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
