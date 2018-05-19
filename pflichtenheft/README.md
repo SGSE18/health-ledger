@@ -107,6 +107,10 @@ Arbeitgeber: Mitarbeiterübersicht
 
 ![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
+Arbeitgeber: Mitarbeiterakte
+
+![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
+
 Arzt: Smart-Rezept ausstellen:
 
 ![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
