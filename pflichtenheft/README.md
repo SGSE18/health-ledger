@@ -143,6 +143,10 @@ Patient: Einsichtsanfragen einsehen:
 
 ![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
 
+Patient: Public Key/QR-Code anzeigen:
+
+![QR-Code anzeigen](images/patient_qrcode_anzeigen_.png "QR-Code anzeigen")
+
 Zustandsdiagramm des Gesamtsystems:
 
 ![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
