@@ -1251,12 +1251,21 @@ Prüfbarkeit |X|-|-|-|
 ## 3.1 Systemübersicht
 ![Systemarchitekturdiagramm](images/Systemarchitektur.png "Systemarchitekturdiagramm")
 
+Abweichend von der Systemarchitektur, wird für den Proof of Concept und die
+Präsentation ein Fabric Netzwerk bestehend aus einem Peer, Ordering Service
+und MSP mit der Standard Policy Konfiguration aufgesetzt. Die Verteilung der
+Fabric-Komponenten kann jedoch ohne weitere Auswirkung auf die Applikation, wie
+oben dargestellt vorgenommen werden.
+
+
 ### Schnittstellenbeschreibung
-Das Hyperledger Fabric Framework stellt bereits eine gRPC-Schnittstelle zu den
-Peers bereit. Diese Schnittstelle wird von der Applikation verwendet, um Daten
-aus dem Distributed Ledger abzufragen bzw. zu aktualisieren. Mittels Protocol
-Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Peer
-übertragen.
+Für die Interaktion mit dem Distributed Ledger stellt das Hyperledger Fabric
+Framework ein SDK für NodeJs bereit. Dieses nutzt Protocol Buffers und gRPC um
+mit den Knoten im Netzwerk zu kommunizieren. Da das SDK jedoch mit dem
+Dateisystem arbeitet, kann es nicht direkt im Browser ausgeführt werden.
+Für diesen Zweck wird zwischen der Web-Applikation und dem Distributed Ledger
+eine REST-Schnittstelle als Proxy implementiert, mit der die indirekte
+Kommunikation der beiden Module ermöglicht wird.
 
 ## 3.2 Softwarearchitektur
 ![Softwarearchitektur](images/Softwarearchitektur.png "Softwarearchitektur")
