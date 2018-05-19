@@ -203,9 +203,7 @@ Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Pee
 
 ## 3.3 Datenmodell
 
-![Datenmodell](images/Benutzermodel_Krankenakte.png "Datenmodell der Krankenakte")
-
-![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
+![Datenmodell](images/Benutzermodel_Behandelungsakte.png "Datenmodell der Krankenakte")
 
 ## 3.4 Abläufe
 Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
@@ -222,22 +220,85 @@ Informationen herrausgeben möchte.
 * Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
 ## 3.5 Entwurf
-* Detaillierte UML-Diagramme für relevante Softwarebausteine
+
+
+
+![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
 
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-* Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-* Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-* Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-* Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+
+### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
+* Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
+
+### 4.1.2 Verwendete Technologien
+#### Backend 
+* Blockchain: Hyperledger Fabric Framework
+* Smart Contracts: JavaScript 
+
+#### Frontend 
+* Webapplikation mit Shared Codebase für alle Plattformen
+* Frontend-Framework: Angular (>=2)
+* UI Framework: Angular Material
+#### Programmiersprachen
+* TypeScript 
+* JavaScript
+* node.js
+* HTML5
+
+### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen
+
+* Versionsverwaltung: Git
+* Entwicklungsumgebungen (IDEs): VSCode, WebStorm
+* Repository: Github
+* Deployment: Github Pages
+
+### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
 
 ## 4.2 Verantwortlichkeiten
-* Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-* Rollendefinition und Zuordnung
+### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
+### 4.2.2 Rollendefinition und Zuordnung
+#### Projektleiter
+Überwacht den Projektfortschritt und stellt eine reibungslose Kommunikation zwischen den einzelnen Entwicklungsbereichen sicher.
+
+#### Softwarearchitekt
+Entwirft den Aufbau von Softwaresystemen und trifft grundlegende Entscheidungen über das Zusammenspiel ihrer diversen Komponenten.
+
+#### Test-Entwickler
+Entwickelt Modultests, Systemtests und Integrationstests um die spezifikationsgerechte, fehlerfreie Funktion einzelner Module, Modulgruppen und des ganzen System sicherzustellen.
+
+#### Frontend-Entwickler
+Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
+
+#### Backend-Entwickler
+Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
+
+| Name     | Rolle     |
+|----------|-----------|
+| Cem      |           |
+| Fynn     |           |
+| Kevin    |           |
+| Mario    |           |
+| Matthias |           |
+| Nils     |           |
+| Patrick  |           |
 
 ## 4.3 Grober Projektplan
-* Meilensteine
+### Meilensteine
+* KW 21 (21.06)
+  * Abgabe Pflichtenheft
+* KW 22 (28.06) / M1
+  * Einarbeitung: Frameworks
+* KW 23 (04.07) / M2
+  * SW-Architektur
+* KW 24 (11.07) / M3
+  * Implementierung: Funktionale Anforderungen
+* KW 25 (18.07) / M4
+  * Softwaretests abgeschlossen
+  * Beginn Projektdokumentation
+* KW 26 (25.07) 
+  * Präsentation / Software-Demo
 
 # 5 Anhänge
 
