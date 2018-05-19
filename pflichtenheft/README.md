@@ -139,11 +139,11 @@ Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
 
 ![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
-Arzt/Versicherung/Apotheker/Arbeitgeber/Patient: Einsichtsanfragen:
+Patient: Einsichtsanfragen:
 
 ![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
 
-Patient: Einsichtsanfragendetails:
+Arzt/Versicherung/Apotheker/Arbeitgeber/Patient: Einsichtsanfragendetails:
 
 ![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
