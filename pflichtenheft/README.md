@@ -111,7 +111,7 @@ Arbeitgeber: Mitarbeiterakte
 
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
-Arzt: Smart-Rezept ausstellen:
+Arzt: Smartrezept ausstellen:
 
 ![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
 
