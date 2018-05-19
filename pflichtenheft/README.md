@@ -95,75 +95,75 @@ Prüfbarkeit |X|-|-|-|
 
 ![Loginscreen](images/login.png "Loginscreen")
 
-Apotheker: Offene Rezepte - Übersicht
+### Apotheker: Offene Rezepte - Übersicht
 
 ![Rezeptübersicht](images/apotheker_offene_rezeptbersicht.png "Offene Rezepte - Übersicht")
 
-Apotheker: Rezeptdetails
+### Apotheker: Rezeptdetails
 
 ![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
 
-Arbeitgeber: Mitarbeiterübersicht
+### Arbeitgeber: Mitarbeiterübersicht
 
 ![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
-Arbeitgeber: Mitarbeiterakte
+### Arbeitgeber: Mitarbeiterakte
 
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
-Arzt: Smart-Rezept ausstellen:
+### Arzt: Smart-Rezept ausstellen:
 
 ![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
 
-Arzt: Behandlung festhalten:
+### Arzt: Behandlung festhalten:
 
 ![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
 
-Arzt: Krankschreibung ausstellen:
+### Arzt: Krankschreibung ausstellen:
 
 ![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
 
-Arzt/Patient/Versicherung: Behandlung einsehen:
+### Arzt/Patient/Versicherung: Behandlung einsehen:
 
 ![Krankenakte](images/arztpatientversicherung_behandlung_einsehen.png "Behandlung einsehen")
 
-Arzt/Patient/Versicherung: Krankenakte:
+### Arzt/Patient/Versicherung: Krankenakte:
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-Arzt/Versicherung: Patientenübersicht
+### Arzt/Versicherung: Patientenübersicht
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-Arzt/Versicherung/Apotheker/Arbeitgeber: QR Code scannen
+### Arzt/Versicherung/Apotheker/Arbeitgeber: QR Code scannen
 
 ![QR-Code scannen](images/arztversicherungapothekerarbeitgeber_qr_code_scannen.png "QR Code scannen")
 
-Patient: Einsichtsanfragen einsehen:
+### Patient: Einsichtsanfragen einsehen:
 
 ![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
 
-Zustandsdiagramm des Gesamtsystems:
+### Zustandsdiagramm des Gesamtsystems:
 
 ![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
 
-Detailliertes Zustandsdiagramm der Patientenansicht:
+### Detailliertes Zustandsdiagramm der Patientenansicht:
 
 ![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
 
-Detailliertes Zustandsdiagramm der Arztansicht:
+### Detailliertes Zustandsdiagramm der Arztansicht:
 
 ![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
 
-Detailliertes Zustandsdiagramm der Versichereransicht:
+### Detailliertes Zustandsdiagramm der Versichereransicht:
 
 ![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
 
-Detailliertes Zustandsdiagramm der Apothekeransicht:
+### Detailliertes Zustandsdiagramm der Apothekeransicht:
 
 ![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
 
-Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
+### Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
 
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
