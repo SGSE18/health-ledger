@@ -1223,11 +1223,6 @@ Prüfbarkeit |X|-|-|-|
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
 ## 2.4 Anforderungen im Detail (Alle)
-* User Stories mit Akzeptanzkritierien
-* Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
-* Strukturierung der User Stories in funktionale Gruppen
-
-### Schablone für User Stories
 
 |  ****Als** ** | ****möchte ich** ** | ** **so dass** ** | ** **Akzeptanz** ** | **Optionalität** |
 |  ------ | ------ | ------ | ------ | :------: |
