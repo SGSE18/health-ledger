@@ -36,25 +36,963 @@ HealthLedger bringt die Idee der Krankenakte nach zeitgemäßem technischen Stan
 # 2 Anforderungen
 
 ## 2.1 Funktionale Anforderungen
-* Use-Case Diagramme (Matthias/Mario)
 
-  Vorerst Draw.io XML geshared per GoogleDrive:
+Primäre UseCases:
 
-  https://drive.google.com/file/d/1pAMpS3cQI8lluesfpWAqOeUHeMnuNVrb/view?usp=sharing
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Transparenz festlegen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Patient</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Patient kann auf eine Einsichtsanforderung eines anderen Aktors reagieren, indem er/sie die angeforderten Informationen zur Einsicht freigibt oder nicht.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Patient ist am System authentifiziert und eine Einsichtsanforderung wurde für ihn/sie im Ledger hinterlegt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Einsicht wurde genehmigt oder abgelehnt</td>
+  </tr>
+</table>
 
-* Akteure
- * Versicherungen
-   * “Behandlungen validieren”
- * Apotheker
-   * “Smart-Rezept einsehen.”
- * Ärzte
-   * “Behandlungen festhalten.”
- * Patienten
-   * “Transparenz kontrollieren.”
- * Arbeitgeber
-   * “Krankschreibungen einsehen.”
 
-* Strukturierung der Diagramme in funktionale Gruppen (Matthias/Mario)
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Einsicht anfordern</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>System</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Das System hinterlegt im Ledger, dass ein Aktor die Krankendaten eines Patienten einsehen möchte.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Ein Aktor verlangt Einsicht in die Patientenakte</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Anforderung wurde für den Patienten im Ledger hinterlegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Krankenakte einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor verlangt Einsicht in die für einen bestimmten Patienten im Ledger gespeicherten Informationen und legt fest, in welchem Umfang er/sie diese benötigt.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor ist am System authentifiziert.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>System legt Anforderung im Ledger ab.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Behandlung einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor wählt eine bestimmte Behandlung aus der Krankenakte eines Patienten und zeigt deren Inhalt an.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor ist am System authentifiziert.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Behandlung ist einsehbar visualisiert.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Behandlung festhalten</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Arzt speichert in der Krankenakte eines Patienten, welche Behandlung/Diagnose er/sie vorgenommen hat. </td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Arzt ist am System authentifiziert und hat eine Patientenakte ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Behandlung ist im Ledger abgelegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-6</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>SmartRezept ausstellen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Arzt speichert in der Krankenakte eines Patienten, dass er/sie im Rahmen einer Behandlung eine Medikation benötigt.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Arzt ist am System authentifiziert und hat eine Patientenakte ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Behandlung mit Rezept  ist im Ledger abgelegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-7</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Krankschreibung ausstellen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Arzt speichert in der Krankenakte eines Patienten, dass er/sie im Rahmen einer Behandlung eine Krankschreibung für einen bestimmten Zeitraum benötigt.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Arzt ist am System authentifiziert und hat eine Patientenakte ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Behandlung mit Krankschreibung ist im Ledger abgelegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-8</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Krankschreibung einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arbeitgeber</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Arbeitgeber ruft eine Krankschreibung für einen Patienten ab und sieht den angegebenen Zeitraum ein.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Arbeitgeber ist am System authentifiziert und hat eine Patientenakte ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Einsichtsanforderung ist im Ledger hinterlegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>SmartRezept einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Apotheker ruft ein SmartRezept ab, um die nötige Medikation einsehen zu können.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Apotheker ist am System authentifiziert und hat eine Behandlung ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Einsichtsanforderung ist im Ledger hinterlegt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-10</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>SmartRezept bedienen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Apotheker ruft ein SmartRezept auf, um zu hinterlegen, dass er/sie die verschriebene Medikation an den Patienten überreicht hat.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Apotheker ist am System authentifiziert und hat eine Behandlung ausgewählt.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Behandlung ist aktualisiert im Ledger hinterlegt.</td>
+  </tr>
+</table>
+
+
+Feingranulare UseCases:
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-3.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Aktenliste durchsuchen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor will eine Liste der mit ihm assoziierten Patientenakten einsehen können.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor ist am System authentifiziert.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Aktenliste wird angezeigt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-3.2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Patientenname einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor will die Namen der mit ihm assoziierten Patientenakten einsehen können.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor ist am System authentifiziert.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Namen werden angezeigt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-3.3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Public Key einsehen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Arzt will die Identifikatoren der mit ihm assoziierten Patientenakten einsehen können.</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Arzt ist am System authentifiziert.</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Walletadressen werden angezeigt.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Kategorie anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor sieht die Kategorie, die zu der Behandlung gehört</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor lässt eine Behandlung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Kategorie wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4.2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Diagnose anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor sieht die Diagnose, die zu der Behandlung gehört</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor lässt eine Behandlung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Diagnose wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4.3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Patientenname anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor sieht den Patientennamen, der zu der Behandlung gehört</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor lässt eine Behandlung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Patientenname wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4.4</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Arztrezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor sieht das Arztrezept, das zu der Behandlung gehört</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor lässt eine Behandlung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Arztrezept wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-4.5</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Arbeitsunfähigkeitsbescheinigung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt, Versicherer</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Aktor sieht die Arbeitsunfähigkeitsbescheinigung, die zu der Behandlung gehört</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Aktor lässt eine Behandlung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Arbeitsunfähigkeitsbescheinigung wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Vorgang abbrechen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Das Erstellen einer neuen Behandlung wird abgebrochen</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Der Erstellprozess wurde abgebrochen</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Arztrezept hinzufügen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor fügt einer neuen Behandlung ein Arztrezept hinzu</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Der Behandlung wurde ein Arztrezept hinzugefügt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Kategorie auswählen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor wählt eine Kategorie für eine neuen Behandlung </td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Kategorie wurde festgelegt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.4</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Diagnose eintragen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor trägt eine Diagnose für eine neuen Behandlung ein</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Diagnose wurde eingetragen</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.5</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Vorgang speichern</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor speichert die neu erstellte Behandlung</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen, eine Kategorie gewählt und eine Diagnose eingetragen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die neue Behandlung wurde gespeichert</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-5.6</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Krankschreibung hinzufügen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor fügt der neu erstellte Behandlung eine Krankschreibung hinzu</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen und einen Zeitraum für die Krankschreibung festgelegt</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Krankschreibung wurde hinzugefügt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-6.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Dosierung festlegen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor legt die Dosierung für das verschriebene Medikament fest</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor erstellt eine neue Behandlung</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Dosierung des Medikamentes für die neue Behandlung ist festgelegt </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-6.2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Medikament festlegen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor legt das verschriebene Medikament fest</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor erstellt eine neue Behandlung</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Das Medikament für die neue Behandlung ist festgelegt </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-6.3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Anlegen abbrechen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor bricht die Verschreibung eines Medikamentes ab</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor erstellt eine neue Behandlung und legt ein Medikament fest</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Kein Medikament für die neue Behandlung ist festgelegt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-6.4</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>SmartRezept speichern</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor speichert das verschriebene Medikament für die neue Behandlung</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor erstellt eine neue Behandlung und hat das Medikament und dessen Dosierung festgelegt</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Das Medikament und dessen Dosierung sind gespeichert</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-7.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Krankschreibung hinzufügen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Arzt</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor fügt der neu erstellte Behandlung eine Krankschreibung hinzu</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor hat begonnen eine neue Behandlung zu erstellen und einen Zeitraum für die Krankschreibung festgelegt</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Krankschreibung wurde hinzugefügt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9.1</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Medikament anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor lässt das verordnete Medikament anzeigen</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor lässt das SmartRezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Das verordnete Medikament wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9.2</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Behandelnden Arzt anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor lässt den behandelnden Arzt anzeigen</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor lässt das SmartRezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Der behandelnde Arzt wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9.3</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Datum anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor lässt das Datum des SmartRezeptes anzeigen</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor lässt das SmartRezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Das Datum des SmartRezeptes wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9.4</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>Dosierung anzeigen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor lässt die Dosierung des SmartRezeptes anzeigen</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor lässt das SmartRezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Die Dosierung des SmartRezeptes wird angezeigt</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Nummer:</td>
+    <td>UC-9.5</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>SmartRezept einlösen</td>
+  </tr>
+  <tr>
+    <td>Primärer Aktor:</td>
+    <td>Apotheker</td>
+  </tr>
+  <tr>
+    <td>Beschreibung:</td>
+    <td>Der Aktor löst das SmartRezeptes ein</td>
+  </tr>
+  <tr>
+    <td>Vorbedingung:</td>
+    <td>Der Aktor lässt das SmartRezept anzeigen</td>
+  </tr>
+  <tr>
+    <td>Nachbedingung:</td>
+    <td>Das SmartRezeptes ist eingelöst</td>
+  </tr>
+</table>
+
+
 
 ## 2.2 Nicht-funktionale Anforderungen
 
@@ -79,13 +1017,22 @@ Dass die zu speichernden Daten einen besonderen Schutzfaktor aufweisen, soll ein
 
 ### Schablone für User Stories
 
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
-| :------ | :----- | :------ | :-------- |
-| Wer | Was | Warum | Wann akzeptiert |
-
-Vorerst geshared per Google Tables:
-
-https://docs.google.com/spreadsheets/d/1EZi6x1SPVpHn4N_kmLJ6R4SVIBvgqvcm2nRK712TtfE/edit?usp=sharing
+|  ****Als** ** | ****möchte ich** ** | ** **so dass** ** | ** **Akzeptanz** ** | **Optionalität** |
+|  ------ | ------ | ------ | ------ | :------: |
+|  Patient | meine Patientenakte einsehen können | ich einen Überblick über meine Behandlungshistorie habe | Historie wird angezeigt | must |
+|  Patient | über Anfragen zur Einsicht auf meine Patientenakte entscheiden können | ich Anfragen ablehnen oder akzeptieren kann | Anfragen werden angezeigt | must |
+|  Patient | entscheiden können, wieviel eingesehen werden kann | ich die Einsicht auf bestimmte Felder meiner Stammdaten/Behandlungen einschränken kann | nur ausgewählte Daten werden freigegeben | must |
+|  Patient | meine Versichertenkarte in Form eines QR Code vorlegen können | die Teilnehmer mir eine Einsichtsanfrage schicken können | Patient erhält Einsichtsanfrage | should |
+|  Versicherer | Behandlung einsehen | damit ich über die gestellten Diagnosen informiert bin  | Behandlung wird dargestellt | must |
+|  Versicherer | fremde Krankenakte einsehen | Überblick über Behandlungshistorie | Historie angezeigt | must |
+|  Arbeitgeber | fremde Krankschreibung einsehen können | fremde Krankschreibung verifizieren | fremde Krankschreibung wird angezeigt | should |
+|  Apotheker | fremdes Smart-Rezept einsehen | verschriebene Medikamente auflisten | Medikamente werden angezeigt | must |
+|  Apotheker | fremdes Smart-Rezept bedienen | fremdes Rezept als bedient vermerkt ist | fremdes Rezept als Erster bedient | must |
+|  Arzt | Krankschreibung ausstellen | für einen fremden Nutzer Krankschreibung angelegt | fremder Nutzer hat neue Krankschreibung | should |
+|  Arzt  | Behandlung festhalten | für einen fremden Nutzer Behandlungseintrag hinzugefügt | fremder Nutzer hat neuen Behandlungseintrag | must |
+|  Arzt | fremde Krankenakte einsehen | die Krankheitshistorie eines fremden Nutzers nachvollziehen  | Alle für eine Behandlung relevanten Daten sind verfügbar | must |
+|  Versicherer, Arbeitgeber, Apotheker, Arzt | Hinweis über Einsichtsverweigerung | Grund der Verweigerung einsehen | Grund wurde nachvollzogen | should |
+|  Jeder | Authentifizieren | Rolle im System identifiziert | Teilnahme am System | must |
 
 # 3 Technische Beschreibung (Nils/Kevin/Cem)
 
