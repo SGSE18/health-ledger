@@ -143,9 +143,13 @@ Patient: Einsichtsanfragen:
 
 ![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
 
-Arzt/Versicherung/Apotheker/Arbeitgeber/Patient: Einsichtsanfragendetails:
+Patient: Einsichtsanfragendetails:
 
 ![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:
+
+![Einsichtsanfragendetails](images/arztversicherungapothekerarbeitgeber_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
 Patient: Public Key/QR-Code:
 
