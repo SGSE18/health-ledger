@@ -145,7 +145,7 @@ Patient: Einsichtsanfragen einsehen:
 
 Patient: Public Key/QR-Code anzeigen:
 
-![QR-Code anzeigen](images/patient_qrcode_anzeigen_.png "QR-Code anzeigen")
+![QR-Code anzeigen](images/patient_qrcode_anzeigen.png "QR-Code anzeigen")
 
 Zustandsdiagramm des Gesamtsystems:
 
@@ -233,16 +233,16 @@ Informationen herrausgeben möchte.
 * Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
 
 ### 4.1.2 Verwendete Technologien
-#### Backend 
+#### Backend
 * Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript 
+* Smart Contracts: JavaScript
 
-#### Frontend 
+#### Frontend
 * Webapplikation mit Shared Codebase für alle Plattformen
 * Frontend-Framework: Angular (>=2)
 * UI Framework: Angular Material
 #### Programmiersprachen
-* TypeScript 
+* TypeScript
 * JavaScript
 * node.js
 * HTML5
@@ -297,7 +297,7 @@ Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse 
 * KW 25 (18.07) / M4
   * Softwaretests abgeschlossen
   * Beginn Projektdokumentation
-* KW 26 (25.07) 
+* KW 26 (25.07)
   * Präsentation / Software-Demo
 
 # 5 Anhänge
