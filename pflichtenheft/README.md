@@ -96,10 +96,22 @@ Prüfbarkeit |X|-|-|-|
 ![Loginscreen](images/login.png "Loginscreen")
 
 ### Apotheker: Offene Rezepte - Übersicht
+- UC-9: SmartRezept einsehen
+- UC-9.1: Medikament anzeigen
+- UC-9.2: Behandelnden Arzt anzeigen
+- UC-9.3: Datum anzeigen
+- UC-9.4: Dosierung anzeigen
 
 ![Rezeptübersicht](images/apotheker_offene_rezeptbersicht.png "Offene Rezepte - Übersicht")
 
 ### Apotheker: Rezeptdetails
+- UC-9: SmartRezept einsehen
+- UC-10: SmartRezept bedienen
+- UC-9.1: Medikament anzeigen
+- UC-9.2: Behandelnden Arzt anzeigen
+- UC-9.3: Datum anzeigen
+- UC-9.4: Dosierung anzeigen
+- UC-9.5: SmartRezept einlösen
 
 ![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
 
@@ -108,40 +120,83 @@ Prüfbarkeit |X|-|-|-|
 ![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
 ### Arbeitgeber: Mitarbeiterakte
+- UC-8: Krankschreibung einsehen
 
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
-### Arzt: Smart-Rezept ausstellen:
 
-![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
+### Arzt: Diagnostik:
+- UC-5: Behandlung festhalten
+- UC-5.1: Vorgang abbrechen
+- UC-5.2: Arztrezept hinzufügen
+- UC-5.3: Kategorie auswählen
+- UC-5.4: Diagnose eintragen
+- UC-5.5: Vorgang speichern
+- UC-5.6: Krankschreibung hinzufügen
+- UC-6.1: Dosierung festlegen
+- UC-6.2: Medikament festlegen
+- UC-6.3: Anlegen abbrechen
+- UC-6.4: Smartrezept speichern
+- UC-7.1: Krankschreibung hinzufügen
 
-### Arzt: Behandlung festhalten:
+![Diagnostik](images/arzt_diagnostik.png "Diagnostik")
 
-![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
+### Arzt: Smartrezept:
+- UC-6 Smartrezept ausstellen
 
-### Arzt: Krankschreibung ausstellen:
+![Smartrezept](images/arzt_smartrezept.png "Smartrezept")
 
-![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
+### Arzt: Arbeitsunfähigkeitszeitraum:
+- UC-7 Krankschreibung ausstellen
 
-### Arzt/Patient/Versicherung: Behandlung einsehen:
+![Arbeitsunfähigkeitszeitraum](images/arzt_arbeitsunfhigkeitszeitraum.png "Arbeitsunfähigkeitszeitraum")
 
-![Krankenakte](images/arztpatientversicherung_behandlung_einsehen.png "Behandlung einsehen")
+
+### Arzt/Patient/Versicherung: Behandlungsdetails:
+- UC-4: Behandlung einsehen (Arzt/Versicherer)
+- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
+- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
+- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
+- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+
+![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
 
 ### Arzt/Patient/Versicherung: Krankenakte:
+- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
+- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
+- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
+- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-### Arzt/Versicherung: Patientenübersicht
+### Arzt/Versicherung: Patientenübersicht:
+- UC-3.1: Aktenliste durchsuchen
+- UC-3.2: Patientennamen einsehen
+- UC-3.3: Public Key einsehen (Arzt)
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-### Arzt/Versicherung/Apotheker/Arbeitgeber: QR Code scannen
+### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
 
-![QR-Code scannen](images/arztversicherungapothekerarbeitgeber_qr_code_scannen.png "QR Code scannen")
+![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
-### Patient: Einsichtsanfragen einsehen:
+### Patient: Einsichtsanfragen:
 
-![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
+![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
+
+### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:
+- UC-3: Krankenakte einsehen (Arzt, Versicherer)
+
+![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+### Patient: Einsichtsanfragendetails:
+- UC-1: Transparenz festlegen
+
+![Einsichtsanfragendetails](images/arztversicherungapothekerarbeitgeber_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+### Patient: Public Key/QR-Code:
+
+![QR-Code](images/patient_qrcode.png "QR-Code")
 
 ### Zustandsdiagramm des Gesamtsystems:
 
@@ -229,16 +284,16 @@ Informationen herrausgeben möchte.
 * Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
 
 ### 4.1.2 Verwendete Technologien
-#### Backend 
+#### Backend
 * Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript 
+* Smart Contracts: JavaScript
 
-#### Frontend 
+#### Frontend
 * Webapplikation mit Shared Codebase für alle Plattformen
 * Frontend-Framework: Angular (>=2)
 * UI Framework: Angular Material
 #### Programmiersprachen
-* TypeScript 
+* TypeScript
 * JavaScript
 * node.js
 * HTML5
@@ -293,7 +348,7 @@ Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse 
 * KW 25 (18.07) / M4
   * Softwaretests abgeschlossen
   * Beginn Projektdokumentation
-* KW 26 (25.07) 
+* KW 26 (25.07)
   * Präsentation / Software-Demo
 
 # 5 Anhänge
