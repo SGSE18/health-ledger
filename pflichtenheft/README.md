@@ -179,16 +179,27 @@ Informationen herrausgeben möchte.
 ### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
 * Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
 
-### 4.1.2 Verwendete Technologien (Programmiersprache, Frameworks, etc.)
+### 4.1.2 Verwendete Technologien
 #### Backend 
-* Hyperledger Fabric Framework
+* Blockchain: Hyperledger Fabric Framework
 * Smart Contracts: JavaScript 
 
 #### Frontend 
 * Webapplikation mit Shared Codebase für alle Plattformen
-* HTML5, JavaScript
+* Frontend-Framework: Angular (>=2)
+* UI Framework: Angular Material
+#### Programmiersprachen
+* TypeScript 
+* JavaScript
+* node.js
+* HTML5
 
-### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
+### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen
+
+* Versionsverwaltung: Git
+* Entwicklungsumgebungen (IDEs): VSCode, WebStorm
+* Repository: Github
+* Deployment: Github Pages
 
 ### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
 
