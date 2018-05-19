@@ -111,21 +111,21 @@ Arbeitgeber: Mitarbeiterakte
 
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
-Arzt: Smartrezept ausstellen:
+Arzt: Smartrezept:
 
-![Rezeptscreen](images/arzt_arztrezept_ausstellen.png "Rezeptscreen")
+![Smartrezept](images/arzt_smartrezept.png "Smartrezept)
 
-Arzt: Behandlung festhalten:
+Arzt: Diagnostik:
 
-![Behandlungscreen](images/arzt_behandlung_festhalten.png "Behandlungsscreen")
+![Diagnostik](images/arzt_diagnostik.png "Diagnostik")
 
-Arzt: Krankschreibung ausstellen:
+Arzt: Arbeitsunfähigkeitszeitraum:
 
-![Attestscreen](images/arzt_krankschreibung_ausstellen.png "Attestscreen")
+![Arbeitsunfähigkeitszeitraum](images/arzt_arbeitsunfhigkeitszeitraum.png "Arbeitsunfähigkeitszeitraum")
 
-Arzt/Patient/Versicherung: Behandlung einsehen:
+Arzt/Patient/Versicherung: Behandlungsdetails:
 
-![Krankenakte](images/arztpatientversicherung_behandlung_einsehen.png "Behandlung einsehen")
+![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
 
 Arzt/Patient/Versicherung: Krankenakte:
 
@@ -135,17 +135,21 @@ Arzt/Versicherung: Patientenübersicht
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-Arzt/Versicherung/Apotheker/Arbeitgeber: QR Code scannen
+Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner
 
-![QR-Code scannen](images/arztversicherungapothekerarbeitgeber_qr_code_scannen.png "QR Code scannen")
+![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
-Patient: Einsichtsanfragen einsehen:
+Patient: Einsichtsanfragen:
 
-![Anfragen einsehen](images/patient_anfragen_einsehen_.png "Einsichtsanfragen einsehen")
+![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
 
-Patient: Public Key/QR-Code anzeigen:
+Patient: Einsichtsanfragendetails:
 
-![QR-Code anzeigen](images/patient_qrcode_anzeigen.png "QR-Code anzeigen")
+![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+Patient: Public Key/QR-Code:
+
+![QR-Code](images/patient_qrcode.png "QR-Code")
 
 Zustandsdiagramm des Gesamtsystems:
 
