@@ -221,6 +221,16 @@ Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layou
 #### Backend-Entwickler
 Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
 
+| Name     | Rolle     |
+|----------|-----------|
+| Cem      |           |
+| Fynn     |           |
+| Kevin    |           |
+| Mario    |           |
+| Matthias |           |
+| Nils     |           |
+| Patrick  |           |
+
 ## 4.3 Grober Projektplan
 ### Meilensteine
 * KW 21 (21.06)
