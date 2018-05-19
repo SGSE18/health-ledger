@@ -113,7 +113,7 @@ Arbeitgeber: Mitarbeiterakte
 
 Arzt: Smartrezept:
 
-![Smartrezept](images/arzt_smartrezept.png "Smartrezept)
+![Smartrezept](images/arzt_smartrezept.png "Smartrezept")
 
 Arzt: Diagnostik:
 
@@ -131,11 +131,11 @@ Arzt/Patient/Versicherung: Krankenakte:
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-Arzt/Versicherung: Patientenübersicht
+Arzt/Versicherung: Patientenübersicht:
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner
+Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
 
 ![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
