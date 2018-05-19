@@ -150,9 +150,7 @@ Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Pee
 
 ## 3.3 Datenmodell
 
-![Datenmodell](images/Benutzermodel_Krankenakte.png "Datenmodell der Krankenakte")
-
-![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
+![Datenmodell](images/Benutzermodel_Behandelungsakte.png "Datenmodell der Krankenakte")
 
 ## 3.4 Abläufe
 Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
@@ -169,7 +167,10 @@ Informationen herrausgeben möchte.
 * Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
 ## 3.5 Entwurf
-* Detaillierte UML-Diagramme für relevante Softwarebausteine
+
+
+
+![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
 
 # 4 Projektorganisation
 
