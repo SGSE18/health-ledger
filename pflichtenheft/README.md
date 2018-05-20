@@ -1,8 +1,6 @@
-# Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
+# Health Ledger: Die digitale Patientenakte
 
-## Health Ledger: Die digitale Patientenakte
-
-#### Autoren:
+## Autoren:
 
 Cem Basoglu
 
@@ -31,32 +29,9 @@ Patrick Starzynski
     - [2.2.2 Betriebsbedingungen](#222-betriebsbedingungen)
     - [2.2.3 Qualitätsmerkmale](#223-qualitätsmerkmale-fynnpatrick)
   - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynnpatrick)
-    - [Apotheker: Offene Rezepte - Übersicht](#apotheker-offene-rezepte---Übersicht)
-    - [Apotheker: Rezeptdetails](#apotheker-rezeptdetails)
-    - [Arbeitgeber: Mitarbeiterübersicht](#arbeitgeber-mitarbeiterübersicht)
-    - [Arbeitgeber: Mitarbeiterakte](#arbeitgeber-mitarbeiterakte)
-    - [Arzt: Diagnostik:](#arzt-diagnostik)
-    - [Arzt: Smartrezept:](#arzt-smartrezept)
-    - [Arzt: Arbeitsunfähigkeitszeitraum:](#arzt-arbeitsunfähigkeitszeitraum)
-    - [Arzt/Patient/Versicherung: Behandlungsdetails:](#arztpatientversicherung-behandlungsdetails)
-    - [Arzt/Patient/Versicherung: Krankenakte:](#arztpatientversicherung-krankenakte)
-    - [Arzt/Versicherung: Patientenübersicht:](#arztversicherung-patientenübersicht)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:](#arztversicherungapothekerarbeitgeber-qr-code-scanner)
-    - [Patient: Einsichtsanfragen:](#patient-einsichtsanfragen)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:](#arztversicherungapothekerarbeitgeber-einsichtsanfragendetails)
-    - [Patient: Einsichtsanfragendetails:](#patient-einsichtsanfragendetails)
-    - [Patient: Public Key/QR-Code:](#patient-public-keyqr-code)
-    - [Zustandsdiagramm des Gesamtsystems:](#zustandsdiagramm-des-gesamtsystems)
-    - [Detailliertes Zustandsdiagramm der Patientenansicht:](#detailliertes-zustandsdiagramm-der-patientenansicht)
-    - [Detailliertes Zustandsdiagramm der Arztansicht:](#detailliertes-zustandsdiagramm-der-arztansicht)
-    - [Detailliertes Zustandsdiagramm der Versichereransicht:](#detailliertes-zustandsdiagramm-der-versichereransicht)
-    - [Detailliertes Zustandsdiagramm der Apothekeransicht:](#detailliertes-zustandsdiagramm-der-apothekeransicht)
-    - [Detailliertes Zustandsdiagramm der Arbeitgeberansicht:](#detailliertes-zustandsdiagramm-der-arbeitgeberansicht)
   - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail-alle)
-    - [Schablone für User Stories](#schablone-für-user-stories)
 - [3 Technische Beschreibung](#3-technische-beschreibung-nilskevincem)
   - [3.1 Systemübersicht](#31-systemübersicht)
-    - [Schnittstellenbeschreibung](#schnittstellenbeschreibung)
   - [3.2 Softwarearchitektur](#32-softwarearchitektur)
   - [3.3 Datenmodell](#33-datenmodell)
   - [3.4 Abläufe](#34-abläufe)
@@ -65,7 +40,6 @@ Patrick Starzynski
   - [4.1 Annahmen](#41-annahmen)
   - [4.2 Verantwortlichkeiten](#42-verantwortlichkeiten)
   - [4.3 Grober Projektplan](#43-grober-projektplan)
-    - [Meilensteine](#meilensteine)
 
 # 1 Einführung
 
@@ -1125,7 +1099,7 @@ Prüfbarkeit |X|-|-|-|
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
 
-### Arzt: Diagnostik:
+### Arzt: Diagnostik
 - UC-5: Behandlung festhalten
 - UC-5.1: Vorgang abbrechen
 - UC-5.2: Arztrezept hinzufügen
@@ -1141,18 +1115,18 @@ Prüfbarkeit |X|-|-|-|
 
 ![Diagnostik](images/arzt_diagnostik.png "Diagnostik")
 
-### Arzt: Smartrezept:
+### Arzt: Smartrezept
 - UC-6 Smartrezept ausstellen
 
 ![Smartrezept](images/arzt_smartrezept.png "Smartrezept")
 
-### Arzt: Arbeitsunfähigkeitszeitraum:
+### Arzt: Arbeitsunfähigkeitszeitraum
 - UC-7 Krankschreibung ausstellen
 
 ![Arbeitsunfähigkeitszeitraum](images/arzt_arbeitsunfhigkeitszeitraum.png "Arbeitsunfähigkeitszeitraum")
 
 
-### Arzt/Patient/Versicherung: Behandlungsdetails:
+### Arzt/Patient/Versicherung: Behandlungsdetails
 - UC-4: Behandlung einsehen (Arzt/Versicherer)
 - UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
 - UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
@@ -1161,7 +1135,7 @@ Prüfbarkeit |X|-|-|-|
 
 ![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
 
-### Arzt/Patient/Versicherung: Krankenakte:
+### Arzt/Patient/Versicherung: Krankenakte
 - UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
 - UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
 - UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
@@ -1169,56 +1143,56 @@ Prüfbarkeit |X|-|-|-|
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-### Arzt/Versicherung: Patientenübersicht:
+### Arzt/Versicherung: Patientenübersicht
 - UC-3.1: Aktenliste durchsuchen
 - UC-3.2: Patientennamen einsehen
 - UC-3.3: Public Key einsehen (Arzt)
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
+### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner
 
 ![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
-### Patient: Einsichtsanfragen:
+### Patient: Einsichtsanfragen
 
 ![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
 
-### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:
+### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails
 - UC-3: Krankenakte einsehen (Arzt, Versicherer)
 
 ![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
-### Patient: Einsichtsanfragendetails:
+### Patient: Einsichtsanfragendetails
 - UC-1: Transparenz festlegen
 
 ![Einsichtsanfragendetails](images/arztversicherungapothekerarbeitgeber_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
-### Patient: Public Key/QR-Code:
+### Patient: Public Key/QR-Code
 
 ![QR-Code](images/patient_qrcode.png "QR-Code")
 
-### Zustandsdiagramm des Gesamtsystems:
+### Zustandsdiagramm des Gesamtsystems
 
 ![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
 
-### Detailliertes Zustandsdiagramm der Patientenansicht:
+### Detailliertes Zustandsdiagramm der Patientenansicht
 
 ![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
 
-### Detailliertes Zustandsdiagramm der Arztansicht:
+### Detailliertes Zustandsdiagramm der Arztansicht
 
 ![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
 
-### Detailliertes Zustandsdiagramm der Versichereransicht:
+### Detailliertes Zustandsdiagramm der Versichereransicht
 
 ![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
 
-### Detailliertes Zustandsdiagramm der Apothekeransicht:
+### Detailliertes Zustandsdiagramm der Apothekeransicht
 
 ![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
 
-### Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
+### Detailliertes Zustandsdiagramm der Arbeitgeberansicht
 
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
