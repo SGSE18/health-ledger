@@ -29,7 +29,7 @@ Features von HealthLedger
 * Durch Chaincode-Verschreibungen wird die papierlose Medikation ermöglicht. Nicht nur ist die Wahrscheinlichkeit einer Falschverabreichung rigoros eingedämmt, der Verarbeitungskomfort für Apotheker und Versicherer steigt zusätzlich deutlich.
 
 * Gemessen an den sehr unterschiedlichen Bedürfnissen und Hintergründen der Systemnutzer liefert HealthLedger maßgeschneiderte Oberflächen für das Anwenderspektrum zwischen medizinischem Laien, Facharzt und Versicherungsdienstleister. Im gleichen Zuge kann als Zusatzvorteil eine selektive Kurzeinsicht gewährt werden, um zum Beispiel den Arbeitgeber frühzeitig und papierlos über eine Krankmeldung zu informieren.
- 
+
 HealthLedger bringt die Idee der Krankenakte nach zeitgemäßem technischen Standard in das 21. Jahrhundert. Anders als in Abrechnungs-Softwaresystemen, die gezielt für Versicherungseinrichtungen an den Markt gebracht wurden und Krankendokumente nur als bruchstückhafte Artefakte erzeugen, steht für HealthLedger die Kooperation mit dem Patienten im klaren Fokus. HealthLedger entfernt die unpersönliche Versicherungsbuchhaltung von jenem, was im Mittelpunkt stehen sollte: dem Menschen.
 
 
@@ -993,14 +993,23 @@ Feingranulare UseCases:
 </table>
 
 ![1](images/uc1.png)
+
 ![2](images/uc2.png)
+
 ![3](images/uc3.png)
+
 ![4](images/uc4.png)
+
 ![5](images/uc5.png)
+
 ![6](images/uc6.png)
+
 ![7](images/uc7.png)
+
 ![8](images/uc8.png)
+
 ![9](images/uc9.png)
+
 ![10](images/uc10.png)
 
 
