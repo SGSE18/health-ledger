@@ -1304,10 +1304,8 @@ benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob
 Informationen herrausgeben möchte.
 
 ![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
-* Aktivitätsdiagramme für relevante Use Cases
-* Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
-Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurden für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welches Teil von dem Chaincode übernommen wird.
+Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welcher Teil von dem Chaincode übernommen wird.
 
 ### Usecase 1: Transparenz festlegen
 ![UC1](images/UC-1_Aktivitätsdiagramm.png "UC1")
@@ -1351,8 +1349,8 @@ Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurden f
 ## 4.1 Annahmen
 
 Um die Sicherheit der patientenbezogenen Daten zu gewährleisten, ist es
-unabdingbar, dass der Private-Key zu keinem Zeitpunkt den Hoheitsbereich des Patienten verlässt. Dies wird sichergestellt indem alle von der
-Ver- und Entschlüsselung betroffenen Komponenten, in der Client Applikation implementiert werden.
+unabdingbar, dass der Private-Key zu keinem Zeitpunkt den Hoheitsbereich des Patienten verlässt. Dies wird sichergestellt, indem alle von der
+Ver- und Entschlüsselung betroffenen Komponenten in der Client Applikation implementiert werden.
 
 ### Technologien
 
