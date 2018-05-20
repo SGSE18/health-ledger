@@ -1307,44 +1307,48 @@ Informationen herrausgeben möchte.
 
 ## 4.1 Annahmen
 
-### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-* Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
+Um die Sicherheit der patientenbezogenen Daten zu gewährleisten, ist es
+unabdingbar, dass der Private-Key zu keinem Zeitpunkt den Hoheitsbereich des Patienten verlässt. Dies wird sichergestellt indem alle von der
+Ver- und Entschlüsselung betroffenen Komponenten, in der Client Applikation implementiert werden.
 
-### 4.1.2 Verwendete Technologien
+### Technologien
+
+#### Distributed Ledger / Smart Contract
+* Programmiersprachen
+  * JavaScript
+* Frameworks / Libraries
+  * Hyperledger Fabric
+  * NodeJS
+  * Fabric Shim
+
 #### Backend
-* Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript
+* Programmiersprachen
+  * Javascript
+* Frameworks / Libraries
+  * NodeJS
+  * Fabric Node SDK
+  * Express.JS
 
 #### Frontend
-* Webapplikation mit Shared Codebase für alle Plattformen
-* Frontend-Framework: Angular (>=2)
-* UI Framework: Angular Material
-#### Programmiersprachen
-* TypeScript
-* JavaScript
-* node.js
-* HTML5
+* Programmiersprachen
+  * Typescript
+* Frameworks / Libraries
+  * Angular
+  * Angular Material Design
 
-### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen
+#### Entwicklung / Integration
 
 * Versionsverwaltung: Git
-* Entwicklungsumgebungen (IDEs): VSCode, WebStorm
+* Entwicklungsumgebungen (IDEs): VSCode, Atom, WebStorm
 * Repository: Github
-* Deployment: Github Pages
+* Deployment: Github Pages, Azure
 
-### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+## Verantwortlichkeiten
 
-## 4.2 Verantwortlichkeiten
-### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-### 4.2.2 Rollendefinition und Zuordnung
-#### Projektleiter
-Überwacht den Projektfortschritt und stellt eine reibungslose Kommunikation zwischen den einzelnen Entwicklungsbereichen sicher.
+### Rollen
 
 #### Softwarearchitekt
 Entwirft den Aufbau von Softwaresystemen und trifft grundlegende Entscheidungen über das Zusammenspiel ihrer diversen Komponenten.
-
-#### Test-Entwickler
-Entwickelt Modultests, Systemtests und Integrationstests um die spezifikationsgerechte, fehlerfreie Funktion einzelner Module, Modulgruppen und des ganzen System sicherzustellen.
 
 #### Frontend-Entwickler
 Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
@@ -1352,38 +1356,34 @@ Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layou
 #### Backend-Entwickler
 Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
 
+#### Chaincode-Entwickler
+Entwickelt Programmlogik die auf Hyperledger Nodes ausgeführt wird und mit der Blockchain interagiert.
+
+#### DevOps-Spezialist
+Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koordination zwischen den Projektteilnehmern ermöglicht.
+
+### Rollenzuordnung
+
 | Name     | Rolle     |
 |----------|-----------|
-| Cem      |           |
-| Fynn     |           |
-| Kevin    |           |
-| Mario    |           |
-| Matthias |           |
-| Nils     |           |
-| Patrick  |           |
+| Cem      | Softwarearchitekt, Chaincode-Entwickler, Backend-Entwickler |
+| Fynn     | Frontend-Entwickler |
+| Kevin    | Backend-Entwickler |
+| Mario    | Backend-Entwickler |
+| Matthias | Backend-Entwickler |
+| Nils     | Frontend-Entwickler, Backend-Entwickler |
+| Patrick  | Frontend-Entwickler |
 
 ## 4.3 Grober Projektplan
 ### Meilensteine
-* KW 21 (21.06)
+* KW 21 (21.05)
   * Abgabe Pflichtenheft
-* KW 22 (28.06) / M1
-  * Einarbeitung: Frameworks
-* KW 23 (04.07) / M2
+* KW 22 (28.05) / M1
+  * Projekt aufsetzen / 
+* KW 23 (04.06) / M2
   * SW-Architektur
-* KW 24 (11.07) / M3
+* KW 25 (18.06) / M3
   * Implementierung: Funktionale Anforderungen
-* KW 25 (18.07) / M4
-  * Softwaretests abgeschlossen
-  * Beginn Projektdokumentation
-* KW 26 (25.07)
+* KW 26 (25.06) 
   * Präsentation / Software-Demo
 
-# 5 Anhänge
-
-## 5.1 Glossar
-* Definitionen, Abkürzungen, Begriffe
-
-## 5.2 Referenzen
-* Handbücher, Gesetze
-
-## 5.3 Index
