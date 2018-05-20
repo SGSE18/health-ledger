@@ -1393,11 +1393,15 @@ Entwickelt Programmlogik die auf Hyperledger Nodes ausgeführt wird und mit der 
 #### DevOps-Spezialist
 Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koordination zwischen den Projektteilnehmern ermöglicht.
 
+#### Zertifikat-Spezialist
+Erzeugt und verwaltet Zertifikate der System-Komponenten und Projektteilnehmer
+für die Interaktion mit dem Distributed Ledger Framework.
+
 ### Rollenzuordnung
 
 | Name     | Rolle     |
 |----------|-----------|
-| Cem      | Softwarearchitekt, Chaincode-Entwickler, Backend-Entwickler |
+| Cem      | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
 | Fynn     | Frontend-Entwickler |
 | Kevin    | Backend-Entwickler |
 | Mario    | Backend-Entwickler |
