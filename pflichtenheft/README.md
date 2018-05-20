@@ -21,7 +21,7 @@ Patrick Starzynski
 
 # Inhaltsverzeichnis
 
-- [1 Einführung](#1-einfuhrung)
+- [1 Einführung](#1-einführung)
   - [1.1 Beschreibung](#11-beschreibung-mario)
   - [1.2 Ziele](#12-ziele)
 - [2 Anforderungen](#2-anforderungen)
@@ -29,23 +29,23 @@ Patrick Starzynski
   - [2.2 Nicht-funktionale Anforderungen](#22-nicht-funktionale-anforderungen)
     - [2.2.1 Rahmenbedingungen](#221-rahmenbedingungen)
     - [2.2.2 Betriebsbedingungen](#222-betriebsbedingungen)
-    - [2.2.3 Qualitätsmerkmale](#223-qualitatsmerkmale-fynn-patrick)
-  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynn-patrick)
-    - [Apotheker: Offene Rezepte - Übersicht](#apotheker--offene-rezepte---ubersicht)
-    - [Apotheker: Rezeptdetails](#apotheker--rezeptdetails)
-    - [Arbeitgeber: Mitarbeiterübersicht](#arbeitgeber--mitarbeiterubersicht)
-    - [Arbeitgeber: Mitarbeiterakte](#arbeitgeber--mitarbeiterakte)
-    - [Arzt: Diagnostik:](#arzt--diagnostik)
-    - [Arzt: Smartrezept:](#arzt--smartrezept)
-    - [Arzt: Arbeitsunfähigkeitszeitraum:](#arzt--arbeitsunfahigkeitszeitraum)
-    - [Arzt/Patient/Versicherung: Behandlungsdetails:](#arzt-patient-versicherung--behandlungsdetails)
-    - [Arzt/Patient/Versicherung: Krankenakte:](#arzt-patient-versicherung--krankenakte)
-    - [Arzt/Versicherung: Patientenübersicht:](#arzt-versicherung--patientenubersicht)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:](#arzt-versicherung-apotheker-arbeitgeber--qr-code-scanner)
-    - [Patient: Einsichtsanfragen:](#patient--einsichtsanfragen)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:](#arzt-versicherung-apotheker-arbeitgeber--einsichtsanfragendetails)
-    - [Patient: Einsichtsanfragendetails:](#patient--einsichtsanfragendetails)
-    - [Patient: Public Key/QR-Code:](#patient--public-key-qr-code)
+    - [2.2.3 Qualitätsmerkmale](#223-qualitätsmerkmale-fynnpatrick)
+  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynnpatrick)
+    - [Apotheker: Offene Rezepte - Übersicht](#apotheker-offene-rezepte---Übersicht)
+    - [Apotheker: Rezeptdetails](#apotheker-rezeptdetails)
+    - [Arbeitgeber: Mitarbeiterübersicht](#arbeitgeber-mitarbeiterübersicht)
+    - [Arbeitgeber: Mitarbeiterakte](#arbeitgeber-mitarbeiterakte)
+    - [Arzt: Diagnostik:](#arzt-diagnostik)
+    - [Arzt: Smartrezept:](#arzt-smartrezept)
+    - [Arzt: Arbeitsunfähigkeitszeitraum:](#arzt-arbeitsunfähigkeitszeitraum)
+    - [Arzt/Patient/Versicherung: Behandlungsdetails:](#arztpatientversicherung-behandlungsdetails)
+    - [Arzt/Patient/Versicherung: Krankenakte:](#arztpatientversicherung-krankenakte)
+    - [Arzt/Versicherung: Patientenübersicht:](#arztversicherung-patientenübersicht)
+    - [Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:](#arztversicherungapothekerarbeitgeber-qr-code-scanner)
+    - [Patient: Einsichtsanfragen:](#patient-einsichtsanfragen)
+    - [Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:](#arztversicherungapothekerarbeitgeber-einsichtsanfragendetails)
+    - [Patient: Einsichtsanfragendetails:](#patient-einsichtsanfragendetails)
+    - [Patient: Public Key/QR-Code:](#patient-public-keyqr-code)
     - [Zustandsdiagramm des Gesamtsystems:](#zustandsdiagramm-des-gesamtsystems)
     - [Detailliertes Zustandsdiagramm der Patientenansicht:](#detailliertes-zustandsdiagramm-der-patientenansicht)
     - [Detailliertes Zustandsdiagramm der Arztansicht:](#detailliertes-zustandsdiagramm-der-arztansicht)
@@ -53,37 +53,19 @@ Patrick Starzynski
     - [Detailliertes Zustandsdiagramm der Apothekeransicht:](#detailliertes-zustandsdiagramm-der-apothekeransicht)
     - [Detailliertes Zustandsdiagramm der Arbeitgeberansicht:](#detailliertes-zustandsdiagramm-der-arbeitgeberansicht)
   - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail-alle)
-    - [Schablone für User Stories](#schablone-fur-user-stories)
-- [3 Technische Beschreibung](#3-technische-beschreibung-nils-kevin-cem)
-  - [3.1 Systemübersicht](#31-systemubersicht)
+    - [Schablone für User Stories](#schablone-für-user-stories)
+- [3 Technische Beschreibung](#3-technische-beschreibung-nilskevincem)
+  - [3.1 Systemübersicht](#31-systemübersicht)
     - [Schnittstellenbeschreibung](#schnittstellenbeschreibung)
   - [3.2 Softwarearchitektur](#32-softwarearchitektur)
   - [3.3 Datenmodell](#33-datenmodell)
-  - [3.4 Abläufe](#34-ablaufe)
+  - [3.4 Abläufe](#34-abläufe)
   - [3.5 Entwurf](#35-entwurf)
 - [4 Projektorganisation](#4-projektorganisation)
   - [4.1 Annahmen](#41-annahmen)
-    - [4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten](#411-nicht-durch-den-kunden-definierte-spezifische-annahmen--anforderungen-und-abhangigkeiten)
-    - [4.1.2 Verwendete Technologien](#412-verwendete-technologien)
-      - [Backend](#backend)
-      - [Frontend](#frontend)
-      - [Programmiersprachen](#programmiersprachen)
-    - [4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen](#413-einschrankungen--betriebsbedingungen-und-faktoren--die-die-entwicklung-beeinflussen)
-    - [4.1.4 Interne Qualitätsanforderungen](#414-interne-qualitatsanforderungen-zb-softwarequalitatsmerkmale-wie-zb-erweiterbarkeit)
   - [4.2 Verantwortlichkeiten](#42-verantwortlichkeiten)
-    - [4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2](#421-zuordnung-von-personen-zu-softwarebausteinen-aus-kapitel-31-und-32)
-    - [4.2.2 Rollendefinition und Zuordnung](#422-rollendefinition-und-zuordnung)
-      - [Projektleiter](#projektleiter)
-      - [Softwarearchitekt](#softwarearchitekt)
-      - [Test-Entwickler](#test-entwickler)
-      - [Frontend-Entwickler](#frontend-entwickler)
-      - [Backend-Entwickler](#backend-entwickler)
   - [4.3 Grober Projektplan](#43-grober-projektplan)
     - [Meilensteine](#meilensteine)
-- [5 Anhänge](#5-anhange)
-  - [5.1 Glossar](#51-glossar)
-  - [5.2 Referenzen](#52-referenzen)
-  - [5.3 Index](#53-index)
 
 # 1 Einführung
 
@@ -1307,44 +1289,48 @@ Informationen herrausgeben möchte.
 
 ## 4.1 Annahmen
 
-### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-* Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
+Um die Sicherheit der patientenbezogenen Daten zu gewährleisten, ist es
+unabdingbar, dass der Private-Key zu keinem Zeitpunkt den Hoheitsbereich des Patienten verlässt. Dies wird sichergestellt indem alle von der
+Ver- und Entschlüsselung betroffenen Komponenten, in der Client Applikation implementiert werden.
 
-### 4.1.2 Verwendete Technologien
+### Technologien
+
+#### Distributed Ledger / Smart Contract
+* Programmiersprachen
+  * JavaScript
+* Frameworks / Libraries
+  * Hyperledger Fabric
+  * NodeJS
+  * Fabric Shim
+
 #### Backend
-* Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript
+* Programmiersprachen
+  * Javascript
+* Frameworks / Libraries
+  * NodeJS
+  * Fabric Node SDK
+  * Express.JS
 
 #### Frontend
-* Webapplikation mit Shared Codebase für alle Plattformen
-* Frontend-Framework: Angular (>=2)
-* UI Framework: Angular Material
-#### Programmiersprachen
-* TypeScript
-* JavaScript
-* node.js
-* HTML5
+* Programmiersprachen
+  * Typescript
+* Frameworks / Libraries
+  * Angular
+  * Angular Material Design
 
-### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen
+#### Entwicklung / Integration
 
 * Versionsverwaltung: Git
-* Entwicklungsumgebungen (IDEs): VSCode, WebStorm
+* Entwicklungsumgebungen (IDEs): VSCode, Atom, WebStorm
 * Repository: Github
-* Deployment: Github Pages
-
-### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+* Deployment: Github Pages, Azure
 
 ## 4.2 Verantwortlichkeiten
-### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-### 4.2.2 Rollendefinition und Zuordnung
-#### Projektleiter
-Überwacht den Projektfortschritt und stellt eine reibungslose Kommunikation zwischen den einzelnen Entwicklungsbereichen sicher.
+
+### Rollen
 
 #### Softwarearchitekt
 Entwirft den Aufbau von Softwaresystemen und trifft grundlegende Entscheidungen über das Zusammenspiel ihrer diversen Komponenten.
-
-#### Test-Entwickler
-Entwickelt Modultests, Systemtests und Integrationstests um die spezifikationsgerechte, fehlerfreie Funktion einzelner Module, Modulgruppen und des ganzen System sicherzustellen.
 
 #### Frontend-Entwickler
 Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
@@ -1352,38 +1338,34 @@ Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layou
 #### Backend-Entwickler
 Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
 
+#### Chaincode-Entwickler
+Entwickelt Programmlogik die auf Hyperledger Nodes ausgeführt wird und mit der Blockchain interagiert.
+
+#### DevOps-Spezialist
+Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koordination zwischen den Projektteilnehmern ermöglicht.
+
+### Rollenzuordnung
+
 | Name     | Rolle     |
 |----------|-----------|
-| Cem      |           |
-| Fynn     |           |
-| Kevin    |           |
-| Mario    |           |
-| Matthias |           |
-| Nils     |           |
-| Patrick  |           |
+| Cem      | Softwarearchitekt, Chaincode-Entwickler, Backend-Entwickler |
+| Fynn     | Frontend-Entwickler |
+| Kevin    | Backend-Entwickler |
+| Mario    | Backend-Entwickler |
+| Matthias | Backend-Entwickler |
+| Nils     | Frontend-Entwickler, Backend-Entwickler |
+| Patrick  | Frontend-Entwickler |
 
 ## 4.3 Grober Projektplan
 ### Meilensteine
-* KW 21 (21.06)
+* KW 21 (21.05)
   * Abgabe Pflichtenheft
-* KW 22 (28.06) / M1
-  * Einarbeitung: Frameworks
-* KW 23 (04.07) / M2
+* KW 22 (28.05) / M1
+  * Projekt aufsetzen
+* KW 23 (04.06) / M2
   * SW-Architektur
-* KW 24 (11.07) / M3
+* KW 25 (18.06) / M3
   * Implementierung: Funktionale Anforderungen
-* KW 25 (18.07) / M4
-  * Softwaretests abgeschlossen
-  * Beginn Projektdokumentation
-* KW 26 (25.07)
+* KW 26 (25.06) 
   * Präsentation / Software-Demo
 
-# 5 Anhänge
-
-## 5.1 Glossar
-* Definitionen, Abkürzungen, Begriffe
-
-## 5.2 Referenzen
-* Handbücher, Gesetze
-
-## 5.3 Index
