@@ -1,8 +1,89 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-Health Ledger: Die digitale Patientenakte
+## Health Ledger: Die digitale Patientenakte
 
-Autoren: ...
+#### Autoren: 
+
+Cem Basoglu
+
+Fynn Klöpper
+
+Kevin Schima
+
+Mario Cichonczyk
+
+Matthias Kersting
+
+Nils Kirchhof
+
+Patrick Starzynski 
+
+
+# Inhaltsverzeichnis
+
+- [1 Einführung](#1-einfuhrung)
+  - [1.1 Beschreibung](#11-beschreibung-mario)
+  - [1.2 Ziele](#12-ziele)
+- [2 Anforderungen](#2-anforderungen)
+  - [2.1 Funktionale Anforderungen](#21-funktionale-anforderungen)
+  - [2.2 Nicht-funktionale Anforderungen](#22-nicht-funktionale-anforderungen)
+    - [2.2.1 Rahmenbedingungen](#221-rahmenbedingungen)
+    - [2.2.2 Betriebsbedingungen](#222-betriebsbedingungen)
+    - [2.2.3 Qualitätsmerkmale](#223-qualitatsmerkmale-fynn-patrick)
+  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynn-patrick)
+    - [Apotheker: Offene Rezepte - Übersicht](#apotheker--offene-rezepte---ubersicht)
+    - [Apotheker: Rezeptdetails](#apotheker--rezeptdetails)
+    - [Arbeitgeber: Mitarbeiterübersicht](#arbeitgeber--mitarbeiterubersicht)
+    - [Arbeitgeber: Mitarbeiterakte](#arbeitgeber--mitarbeiterakte)
+    - [Arzt: Diagnostik:](#arzt--diagnostik)
+    - [Arzt: Smartrezept:](#arzt--smartrezept)
+    - [Arzt: Arbeitsunfähigkeitszeitraum:](#arzt--arbeitsunfahigkeitszeitraum)
+    - [Arzt/Patient/Versicherung: Behandlungsdetails:](#arzt-patient-versicherung--behandlungsdetails)
+    - [Arzt/Patient/Versicherung: Krankenakte:](#arzt-patient-versicherung--krankenakte)
+    - [Arzt/Versicherung: Patientenübersicht:](#arzt-versicherung--patientenubersicht)
+    - [Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:](#arzt-versicherung-apotheker-arbeitgeber--qr-code-scanner)
+    - [Patient: Einsichtsanfragen:](#patient--einsichtsanfragen)
+    - [Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:](#arzt-versicherung-apotheker-arbeitgeber--einsichtsanfragendetails)
+    - [Patient: Einsichtsanfragendetails:](#patient--einsichtsanfragendetails)
+    - [Patient: Public Key/QR-Code:](#patient--public-key-qr-code)
+    - [Zustandsdiagramm des Gesamtsystems:](#zustandsdiagramm-des-gesamtsystems)
+    - [Detailliertes Zustandsdiagramm der Patientenansicht:](#detailliertes-zustandsdiagramm-der-patientenansicht)
+    - [Detailliertes Zustandsdiagramm der Arztansicht:](#detailliertes-zustandsdiagramm-der-arztansicht)
+    - [Detailliertes Zustandsdiagramm der Versichereransicht:](#detailliertes-zustandsdiagramm-der-versichereransicht)
+    - [Detailliertes Zustandsdiagramm der Apothekeransicht:](#detailliertes-zustandsdiagramm-der-apothekeransicht)
+    - [Detailliertes Zustandsdiagramm der Arbeitgeberansicht:](#detailliertes-zustandsdiagramm-der-arbeitgeberansicht)
+  - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail-alle)
+    - [Schablone für User Stories](#schablone-fur-user-stories)
+- [3 Technische Beschreibung](#3-technische-beschreibung-nils-kevin-cem)
+  - [3.1 Systemübersicht](#31-systemubersicht)
+    - [Schnittstellenbeschreibung](#schnittstellenbeschreibung)
+  - [3.2 Softwarearchitektur](#32-softwarearchitektur)
+  - [3.3 Datenmodell](#33-datenmodell)
+  - [3.4 Abläufe](#34-ablaufe)
+  - [3.5 Entwurf](#35-entwurf)
+- [4 Projektorganisation](#4-projektorganisation)
+  - [4.1 Annahmen](#41-annahmen)
+    - [4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten](#411-nicht-durch-den-kunden-definierte-spezifische-annahmen--anforderungen-und-abhangigkeiten)
+    - [4.1.2 Verwendete Technologien](#412-verwendete-technologien)
+      - [Backend](#backend)
+      - [Frontend](#frontend)
+      - [Programmiersprachen](#programmiersprachen)
+    - [4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen](#413-einschrankungen--betriebsbedingungen-und-faktoren--die-die-entwicklung-beeinflussen)
+    - [4.1.4 Interne Qualitätsanforderungen](#414-interne-qualitatsanforderungen-zb-softwarequalitatsmerkmale-wie-zb-erweiterbarkeit)
+  - [4.2 Verantwortlichkeiten](#42-verantwortlichkeiten)
+    - [4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2](#421-zuordnung-von-personen-zu-softwarebausteinen-aus-kapitel-31-und-32)
+    - [4.2.2 Rollendefinition und Zuordnung](#422-rollendefinition-und-zuordnung)
+      - [Projektleiter](#projektleiter)
+      - [Softwarearchitekt](#softwarearchitekt)
+      - [Test-Entwickler](#test-entwickler)
+      - [Frontend-Entwickler](#frontend-entwickler)
+      - [Backend-Entwickler](#backend-entwickler)
+  - [4.3 Grober Projektplan](#43-grober-projektplan)
+    - [Meilensteine](#meilensteine)
+- [5 Anhänge](#5-anhange)
+  - [5.1 Glossar](#51-glossar)
+  - [5.2 Referenzen](#52-referenzen)
+  - [5.3 Index](#53-index)
 
 # 1 Einführung
 
