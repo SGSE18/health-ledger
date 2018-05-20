@@ -2,7 +2,7 @@
 
 ## Health Ledger: Die digitale Patientenakte
 
-#### Autoren: 
+#### Autoren:
 
 Cem Basoglu
 
@@ -16,7 +16,7 @@ Matthias Kersting
 
 Nils Kirchhof
 
-Patrick Starzynski 
+Patrick Starzynski
 
 
 # Inhaltsverzeichnis
@@ -1403,6 +1403,5 @@ Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koor
   * SW-Architektur
 * KW 25 (18.06) / M3
   * Implementierung: Funktionale Anforderungen
-* KW 26 (25.06) 
+* KW 26 (25.06)
   * Präsentation / Software-Demo
-
