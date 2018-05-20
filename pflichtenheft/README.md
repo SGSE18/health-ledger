@@ -1364,6 +1364,18 @@ Ver- und Entschlüsselung betroffenen Komponenten, in der Client Applikation imp
 
 ## 4.2 Verantwortlichkeiten
 
+### Komponenten und Module
+
+| Komponente / Modul | Name |
+|----------|-----------|
+| Chaincode (Business Logic) |  |
+| Application Logic |  |
+| REST API |  |
+| Chain Service |  |
+| Storage Service |  |
+| Crypto Service |  |
+| Frontend | . |
+
 ### Rollen
 
 #### Softwarearchitekt
