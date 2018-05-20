@@ -1030,30 +1030,134 @@ Prüfbarkeit |X|-|-|-|
 
 ## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
 
-![Loginscreen](images/mockup_login.png "Loginscreen")
+![Loginscreen](images/login.png "Loginscreen")
 
-Behandlung festhalten:
+### Apotheker: Offene Rezepte - Übersicht
+- UC-9: SmartRezept einsehen
+- UC-9.1: Medikament anzeigen
+- UC-9.2: Behandelnden Arzt anzeigen
+- UC-9.3: Datum anzeigen
+- UC-9.4: Dosierung anzeigen
 
-![Behandlungscreen](images/mockup_behandlung.png "Behandlungsscreen")
+![Rezeptübersicht](images/apotheker_offene_rezeptbersicht.png "Offene Rezepte - Übersicht")
 
-Smart-Rezept ausstellen:
+### Apotheker: Rezeptdetails
+- UC-9: SmartRezept einsehen
+- UC-10: SmartRezept bedienen
+- UC-9.1: Medikament anzeigen
+- UC-9.2: Behandelnden Arzt anzeigen
+- UC-9.3: Datum anzeigen
+- UC-9.4: Dosierung anzeigen
+- UC-9.5: SmartRezept einlösen
 
-![Rezeptscreen](images/mockup_behandlung_rezept.png "Rezeptscreen")
+![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
 
-Krankschreibung ausstellen:
+### Arbeitgeber: Mitarbeiterübersicht
 
-![Attestscreen](images/mockup_behandlung_attest.png "Attestscreen")
+![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
-Krankenakten einsehen:
+### Arbeitgeber: Mitarbeiterakte
+- UC-8: Krankschreibung einsehen
 
-![Krankenakte](images/mockup_krankenakte.png "Krankenakte")
+![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
-Krankenakte einsehen:
 
-![Krankenaktedetails](images/mockup_krankenakte_details.png "Krankenaktendetails")
+### Arzt: Diagnostik:
+- UC-5: Behandlung festhalten
+- UC-5.1: Vorgang abbrechen
+- UC-5.2: Arztrezept hinzufügen
+- UC-5.3: Kategorie auswählen
+- UC-5.4: Diagnose eintragen
+- UC-5.5: Vorgang speichern
+- UC-5.6: Krankschreibung hinzufügen
+- UC-6.1: Dosierung festlegen
+- UC-6.2: Medikament festlegen
+- UC-6.3: Anlegen abbrechen
+- UC-6.4: Smartrezept speichern
+- UC-7.1: Krankschreibung hinzufügen
 
-* GUI-Mockups passend zu User Stories
-* Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
+![Diagnostik](images/arzt_diagnostik.png "Diagnostik")
+
+### Arzt: Smartrezept:
+- UC-6 Smartrezept ausstellen
+
+![Smartrezept](images/arzt_smartrezept.png "Smartrezept")
+
+### Arzt: Arbeitsunfähigkeitszeitraum:
+- UC-7 Krankschreibung ausstellen
+
+![Arbeitsunfähigkeitszeitraum](images/arzt_arbeitsunfhigkeitszeitraum.png "Arbeitsunfähigkeitszeitraum")
+
+
+### Arzt/Patient/Versicherung: Behandlungsdetails:
+- UC-4: Behandlung einsehen (Arzt/Versicherer)
+- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
+- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
+- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
+- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+
+![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
+
+### Arzt/Patient/Versicherung: Krankenakte:
+- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
+- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
+- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
+- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+
+![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
+
+### Arzt/Versicherung: Patientenübersicht:
+- UC-3.1: Aktenliste durchsuchen
+- UC-3.2: Patientennamen einsehen
+- UC-3.3: Public Key einsehen (Arzt)
+
+![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
+
+### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
+
+![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
+
+### Patient: Einsichtsanfragen:
+
+![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
+
+### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:
+- UC-3: Krankenakte einsehen (Arzt, Versicherer)
+
+![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+### Patient: Einsichtsanfragendetails:
+- UC-1: Transparenz festlegen
+
+![Einsichtsanfragendetails](images/arztversicherungapothekerarbeitgeber_einsichtsanfragendetails.png "Einsichtsanfragendetails")
+
+### Patient: Public Key/QR-Code:
+
+![QR-Code](images/patient_qrcode.png "QR-Code")
+
+### Zustandsdiagramm des Gesamtsystems:
+
+![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
+
+### Detailliertes Zustandsdiagramm der Patientenansicht:
+
+![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
+
+### Detailliertes Zustandsdiagramm der Arztansicht:
+
+![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
+
+### Detailliertes Zustandsdiagramm der Versichereransicht:
+
+![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
+
+### Detailliertes Zustandsdiagramm der Apothekeransicht:
+
+![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
+
+### Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
+
+![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
 ## 2.4 Anforderungen im Detail (Alle)
 * User Stories mit Akzeptanzkritierien
@@ -1126,16 +1230,16 @@ Informationen herrausgeben möchte.
 * Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
 
 ### 4.1.2 Verwendete Technologien
-#### Backend 
+#### Backend
 * Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript 
+* Smart Contracts: JavaScript
 
-#### Frontend 
+#### Frontend
 * Webapplikation mit Shared Codebase für alle Plattformen
 * Frontend-Framework: Angular (>=2)
 * UI Framework: Angular Material
 #### Programmiersprachen
-* TypeScript 
+* TypeScript
 * JavaScript
 * node.js
 * HTML5
@@ -1190,7 +1294,7 @@ Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse 
 * KW 25 (18.07) / M4
   * Softwaretests abgeschlossen
   * Beginn Projektdokumentation
-* KW 26 (25.07) 
+* KW 26 (25.07)
   * Präsentation / Software-Demo
 
 # 5 Anhänge
