@@ -1239,6 +1239,36 @@ Kommunikation der beiden Module ermöglicht wird.
 ## 3.2 Softwarearchitektur
 ![Softwarearchitektur](images/Softwarearchitektur.png "Softwarearchitektur")
 
+### Chaincode (Business Logic)
+Beinhaltet alle Funktionalitäten, die für den Zugriff auf die Patientenakte im
+Distributed Ledger notwendig sind.
+
+### Application Logic
+Diese Komponente ist für die transparente Interaktion mit dem Chaincode und der
+Farbric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
+definierten Schritte, um Daten der Patientenakte im Distributed Ledger zu
+aktualisieren.
+
+### REST API
+Stellt die Funktionalitäten der Application Logic über URLs bereit und nutzt die
+HTTP-Methoden um Daten im Distributed Ledger zu manipulieren. Diese
+Schnittstelle dient der Web Application als Backend.
+
+### Chain Service
+Kapselt die REST API Logik und stellt den Nutzer einen Angular-Service zur
+Interaktion mit der REST Schnittstelle bereit.
+
+### Storage Service
+Nutzt den Local- bzw. Session-Storage im Browser, um Informationen für die
+Authentifizierung zu verwalten und stellt diese als Service für die restlichen
+Komponenten bereit.
+
+### Crypto Service
+Ist verantwortlich für die Ver- und Entschlüsselung der Patientendaten.
+
+### Frontend
+Beinhaltet die Komponenten und Views für das Frontend.
+
 ## 3.3 Datenmodell
 
 ![Datenmodell](images/Benutzermodel_Behandelungsakte.png "Datenmodell der Krankenakte")
