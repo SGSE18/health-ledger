@@ -43,7 +43,7 @@ Patrick Starzynski
 
 # 1 Einführung
 
-## 1.1 Beschreibung (Mario)
+## 1.1 Beschreibung
 Als besonders schutzbedürftige Informationssammlung ist die Krankenakte tief in die persönliche Privatsphäre eingebettet. Die Kontrolle, wer wann in welchem Umfang Zugriff auf Krankendaten erhält, ist im aktuellen Gesundheitssystem für den Patienten nicht nur mangelhaft nachvollziehbar, sondern auch erheblich durch die segmentierte Vorhaltung in verteilten Heilanstalten und Versicherungsdienststellen erschwert. Auch wenn eine zentralisierte Patientenkartei diesen Problemen eine Lösung zu sein scheint, ergeben sich im Rahmen einer institutionalisierten Form der Datenhaltung neue Hürden der administrativen Intransparenz. Medizinische Informationsüberlassungen wären lediglich ein gewährter Dienst einer Körperschaft anstatt sich in echter Kontrolle durch den Informationseigner zu konkretisieren.
 
 HealthLedger ist die innovative Antwort auf das Verlangen nach dezentraler und sicherer Speicherung der Gesundheitshistorie bei gleichzeitig höchstpersönlicher Zugriffskontrolle.
@@ -1059,7 +1059,7 @@ Dass die zu speichernden Daten einen besonderen Schutzfaktor aufweisen, soll ein
 * Hyperledger
 * Webapp
 
-### 2.2.3 Qualitätsmerkmale (Fynn/Patrick)
+### 2.2.3 Qualitätsmerkmale
 
 Qualitätsmerkmal | sehr gut | gut | normal | nicht relevant
 ---|---|---|---|---
@@ -1084,7 +1084,7 @@ Stabilität |X|-|-|-|
 Prüfbarkeit |X|-|-|-|
 
 
-## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
+## 2.3 Graphische Benutzerschnittstelle
 
 ![Loginscreen](images/login.png "Loginscreen")
 
@@ -1216,7 +1216,7 @@ Prüfbarkeit |X|-|-|-|
 
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
-## 2.4 Anforderungen im Detail (Alle)
+## 2.4 Anforderungen im Detail
 
 |  ****Als** ** | ****möchte ich** ** | ** **so dass** ** | ** **Akzeptanz** ** | **Optionalität** |
 |  ------ | ------ | ------ | ------ | :------: |
@@ -1235,7 +1235,7 @@ Prüfbarkeit |X|-|-|-|
 |  Versicherer, Arbeitgeber, Apotheker, Arzt | Hinweis über Einsichtsverweigerung | Grund der Verweigerung einsehen | Grund wurde nachvollzogen | should |
 |  Jeder | Authentifizieren | Rolle im System identifiziert | Teilnahme am System | must |
 
-# 3 Technische Beschreibung (Nils/Kevin/Cem)
+# 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
 ![Systemarchitekturdiagramm](images/Systemarchitektur.png "Systemarchitekturdiagramm")
@@ -1392,13 +1392,13 @@ Ver- und Entschlüsselung betroffenen Komponenten, in der Client Applikation imp
 
 | Komponente / Modul | Name |
 |----------|-----------|
-| Chaincode (Business Logic) |  |
-| Application Logic |  |
-| REST API |  |
-| Chain Service |  |
-| Storage Service |  |
-| Crypto Service |  |
-| Frontend | . |
+| Chaincode (Business Logic) | Cem Basoglu |
+| Application Logic | Patrick Starzynski |
+| REST API | Matthias Kersting |
+| Chain Service | Nils Kirchhof |
+| Storage Service | Kevin Schima |
+| Crypto Service | Mario Cichonczyk |
+| Frontend | Fynn Klöpper |
 
 ### Rollen
 
@@ -1425,13 +1425,13 @@ für die Interaktion mit dem Distributed Ledger Framework.
 
 | Name     | Rolle     |
 |----------|-----------|
-| Cem      | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
-| Fynn     | Frontend-Entwickler |
-| Kevin    | Backend-Entwickler |
-| Mario    | Backend-Entwickler |
-| Matthias | Backend-Entwickler |
-| Nils     | Frontend-Entwickler, Backend-Entwickler |
-| Patrick  | Frontend-Entwickler |
+| Cem Basoglu | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
+| Fynn Klöpper | Frontend-Entwickler |
+| Kevin Schima | Backend-Entwickler |
+| Mario Cichonczyk | Backend-Entwickler |
+| Matthias Kersting | Backend-Entwickler |
+| Nils Kirchhof | Frontend-Entwickler, Backend-Entwickler |
+| Patrick Starzynski | Frontend-Entwickler |
 
 ## 4.3 Grober Projektplan
 ### Meilensteine
