@@ -1090,6 +1090,7 @@ Prüfbarkeit |X|-|-|-|
 ![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
 
 ### Arbeitgeber: Mitarbeiterübersicht
+- UC-3.3: Public Key einsehen
 
 ![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
@@ -1127,26 +1128,26 @@ Prüfbarkeit |X|-|-|-|
 
 
 ### Arzt/Patient/Versicherung: Behandlungsdetails
-- UC-4: Behandlung einsehen (Arzt/Versicherer)
-- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
-- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
-- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
-- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+- UC-4: Behandlung einsehen
+- UC-4.1: Kategorie anzeigen
+- UC-4.2: Diagnose anzeigen
+- UC-4.3: Patientenname anzeigen
+- UC-4.4: Arztrezept anzeigen
 
 ![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
 
 ### Arzt/Patient/Versicherung: Krankenakte
-- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
-- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
-- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
-- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+- UC-4.1: Kategorie anzeigen
+- UC-4.2: Diagnose anzeigen
+- UC-4.3: Patientenname anzeigen
+- UC-4.4: Arztrezept anzeigen
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
 ### Arzt/Versicherung: Patientenübersicht
 - UC-3.1: Aktenliste durchsuchen
 - UC-3.2: Patientennamen einsehen
-- UC-3.3: Public Key einsehen (Arzt)
+- UC-3.3: Public Key einsehen
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
