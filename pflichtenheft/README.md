@@ -143,7 +143,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -171,7 +171,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -425,7 +425,7 @@ Feingranulare UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -1029,6 +1029,25 @@ Feingranulare UseCases:
   </tr>
 </table>
 
+![1](images/uc1.png)
+
+![2](images/uc2.png)
+
+![3](images/uc3.png)
+
+![4](images/uc4.png)
+
+![5](images/uc5.png)
+
+![6](images/uc6.png)
+
+![7](images/uc7.png)
+
+![8](images/uc8.png)
+
+![9](images/uc9.png)
+
+![10](images/uc10.png)
 
 
 ## 2.2 Nicht-funktionale Anforderungen
