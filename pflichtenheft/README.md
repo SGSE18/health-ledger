@@ -1279,6 +1279,39 @@ Informationen herrausgeben möchte.
 * Aktivitätsdiagramme für relevante Use Cases
 * Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
+Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurden für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welches Teil von dem Chaincode übernommen wird.
+
+### Usecase 1: Transparenz festlegen
+![UC1](images/UC-1_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 2: Einsicht anfordern
+![UC2](images/UC-2_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 3: Krankenakte einsehen
+![UC3](images/UC-3_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 4: Behandlung einsehen
+![UC4](images/UC-4_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 5: Behandlung festhalten
+![UC5](images/UC-5_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 6: SmartRezept ausstellen
+![UC6](images/UC-6_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 7: Krankschreibung ausstellen
+![UC7](images/UC-7_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 8: Krankschreibung einsehen
+![UC8](images/UC-8_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 9: SmartRezept einsehen
+![UC9](images/UC-9_Aktivitätsdiagramm.png "UC1")
+
+### Usecase 10: SmartRezept bedienen
+![UC10](images/UC-10_Aktivitätsdiagramm.png "UC1")
+
+
 ## 3.5 Entwurf
 
 
