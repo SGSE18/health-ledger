@@ -106,7 +106,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -134,7 +134,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -388,7 +388,7 @@ Feingranulare UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
