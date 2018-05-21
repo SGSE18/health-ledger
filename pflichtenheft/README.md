@@ -1425,7 +1425,7 @@ für die Interaktion mit dem Distributed Ledger Framework.
 |----------|-----------|
 | Cem Basoglu | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
 | Fynn Klöpper | Frontend-Entwickler |
-| Kevin Schima | Backend-Entwickler |
+| Kevin Schima | Backend-Entwickler, Chaincode-Entwickler, DevOps-Spezialist |
 | Mario Cichonczyk | Backend-Entwickler |
 | Matthias Kersting | Backend-Entwickler |
 | Nils Kirchhof | Frontend-Entwickler, Backend-Entwickler |
