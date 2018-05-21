@@ -1,8 +1,6 @@
-# Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
+# Health Ledger: Die digitale Patientenakte
 
-## Health Ledger: Die digitale Patientenakte
-
-#### Autoren: 
+## Autoren:
 
 Cem Basoglu
 
@@ -16,12 +14,12 @@ Matthias Kersting
 
 Nils Kirchhof
 
-Patrick Starzynski 
+Patrick Starzynski
 
 
 # Inhaltsverzeichnis
 
-- [1 Einführung](#1-einfuhrung)
+- [1 Einführung](#1-einführung)
   - [1.1 Beschreibung](#11-beschreibung-mario)
   - [1.2 Ziele](#12-ziele)
 - [2 Anforderungen](#2-anforderungen)
@@ -29,65 +27,23 @@ Patrick Starzynski
   - [2.2 Nicht-funktionale Anforderungen](#22-nicht-funktionale-anforderungen)
     - [2.2.1 Rahmenbedingungen](#221-rahmenbedingungen)
     - [2.2.2 Betriebsbedingungen](#222-betriebsbedingungen)
-    - [2.2.3 Qualitätsmerkmale](#223-qualitatsmerkmale-fynn-patrick)
-  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynn-patrick)
-    - [Apotheker: Offene Rezepte - Übersicht](#apotheker--offene-rezepte---ubersicht)
-    - [Apotheker: Rezeptdetails](#apotheker--rezeptdetails)
-    - [Arbeitgeber: Mitarbeiterübersicht](#arbeitgeber--mitarbeiterubersicht)
-    - [Arbeitgeber: Mitarbeiterakte](#arbeitgeber--mitarbeiterakte)
-    - [Arzt: Diagnostik:](#arzt--diagnostik)
-    - [Arzt: Smartrezept:](#arzt--smartrezept)
-    - [Arzt: Arbeitsunfähigkeitszeitraum:](#arzt--arbeitsunfahigkeitszeitraum)
-    - [Arzt/Patient/Versicherung: Behandlungsdetails:](#arzt-patient-versicherung--behandlungsdetails)
-    - [Arzt/Patient/Versicherung: Krankenakte:](#arzt-patient-versicherung--krankenakte)
-    - [Arzt/Versicherung: Patientenübersicht:](#arzt-versicherung--patientenubersicht)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:](#arzt-versicherung-apotheker-arbeitgeber--qr-code-scanner)
-    - [Patient: Einsichtsanfragen:](#patient--einsichtsanfragen)
-    - [Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:](#arzt-versicherung-apotheker-arbeitgeber--einsichtsanfragendetails)
-    - [Patient: Einsichtsanfragendetails:](#patient--einsichtsanfragendetails)
-    - [Patient: Public Key/QR-Code:](#patient--public-key-qr-code)
-    - [Zustandsdiagramm des Gesamtsystems:](#zustandsdiagramm-des-gesamtsystems)
-    - [Detailliertes Zustandsdiagramm der Patientenansicht:](#detailliertes-zustandsdiagramm-der-patientenansicht)
-    - [Detailliertes Zustandsdiagramm der Arztansicht:](#detailliertes-zustandsdiagramm-der-arztansicht)
-    - [Detailliertes Zustandsdiagramm der Versichereransicht:](#detailliertes-zustandsdiagramm-der-versichereransicht)
-    - [Detailliertes Zustandsdiagramm der Apothekeransicht:](#detailliertes-zustandsdiagramm-der-apothekeransicht)
-    - [Detailliertes Zustandsdiagramm der Arbeitgeberansicht:](#detailliertes-zustandsdiagramm-der-arbeitgeberansicht)
+    - [2.2.3 Qualitätsmerkmale](#223-qualitätsmerkmale-fynnpatrick)
+  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynnpatrick)
   - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail-alle)
-    - [Schablone für User Stories](#schablone-fur-user-stories)
-- [3 Technische Beschreibung](#3-technische-beschreibung-nils-kevin-cem)
-  - [3.1 Systemübersicht](#31-systemubersicht)
-    - [Schnittstellenbeschreibung](#schnittstellenbeschreibung)
+- [3 Technische Beschreibung](#3-technische-beschreibung-nilskevincem)
+  - [3.1 Systemübersicht](#31-systemübersicht)
   - [3.2 Softwarearchitektur](#32-softwarearchitektur)
   - [3.3 Datenmodell](#33-datenmodell)
-  - [3.4 Abläufe](#34-ablaufe)
+  - [3.4 Abläufe](#34-abläufe)
   - [3.5 Entwurf](#35-entwurf)
 - [4 Projektorganisation](#4-projektorganisation)
   - [4.1 Annahmen](#41-annahmen)
-    - [4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten](#411-nicht-durch-den-kunden-definierte-spezifische-annahmen--anforderungen-und-abhangigkeiten)
-    - [4.1.2 Verwendete Technologien](#412-verwendete-technologien)
-      - [Backend](#backend)
-      - [Frontend](#frontend)
-      - [Programmiersprachen](#programmiersprachen)
-    - [4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen](#413-einschrankungen--betriebsbedingungen-und-faktoren--die-die-entwicklung-beeinflussen)
-    - [4.1.4 Interne Qualitätsanforderungen](#414-interne-qualitatsanforderungen-zb-softwarequalitatsmerkmale-wie-zb-erweiterbarkeit)
   - [4.2 Verantwortlichkeiten](#42-verantwortlichkeiten)
-    - [4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2](#421-zuordnung-von-personen-zu-softwarebausteinen-aus-kapitel-31-und-32)
-    - [4.2.2 Rollendefinition und Zuordnung](#422-rollendefinition-und-zuordnung)
-      - [Projektleiter](#projektleiter)
-      - [Softwarearchitekt](#softwarearchitekt)
-      - [Test-Entwickler](#test-entwickler)
-      - [Frontend-Entwickler](#frontend-entwickler)
-      - [Backend-Entwickler](#backend-entwickler)
   - [4.3 Grober Projektplan](#43-grober-projektplan)
-    - [Meilensteine](#meilensteine)
-- [5 Anhänge](#5-anhange)
-  - [5.1 Glossar](#51-glossar)
-  - [5.2 Referenzen](#52-referenzen)
-  - [5.3 Index](#53-index)
 
 # 1 Einführung
 
-## 1.1 Beschreibung (Mario)
+## 1.1 Beschreibung
 Als besonders schutzbedürftige Informationssammlung ist die Krankenakte tief in die persönliche Privatsphäre eingebettet. Die Kontrolle, wer wann in welchem Umfang Zugriff auf Krankendaten erhält, ist im aktuellen Gesundheitssystem für den Patienten nicht nur mangelhaft nachvollziehbar, sondern auch erheblich durch die segmentierte Vorhaltung in verteilten Heilanstalten und Versicherungsdienststellen erschwert. Auch wenn eine zentralisierte Patientenkartei diesen Problemen eine Lösung zu sein scheint, ergeben sich im Rahmen einer institutionalisierten Form der Datenhaltung neue Hürden der administrativen Intransparenz. Medizinische Informationsüberlassungen wären lediglich ein gewährter Dienst einer Körperschaft anstatt sich in echter Kontrolle durch den Informationseigner zu konkretisieren.
 
 HealthLedger ist die innovative Antwort auf das Verlangen nach dezentraler und sicherer Speicherung der Gesundheitshistorie bei gleichzeitig höchstpersönlicher Zugriffskontrolle.
@@ -187,7 +143,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -215,7 +171,7 @@ Primäre UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt, Versicherer</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -469,7 +425,7 @@ Feingranulare UseCases:
   </tr>
   <tr>
     <td>Primärer Aktor:</td>
-    <td>Arzt</td>
+    <td>Arzt, Versicherer, Patient</td>
   </tr>
   <tr>
     <td>Beschreibung:</td>
@@ -1073,6 +1029,25 @@ Feingranulare UseCases:
   </tr>
 </table>
 
+![1](images/uc1.png)
+
+![2](images/uc2.png)
+
+![3](images/uc3.png)
+
+![4](images/uc4.png)
+
+![5](images/uc5.png)
+
+![6](images/uc6.png)
+
+![7](images/uc7.png)
+
+![8](images/uc8.png)
+
+![9](images/uc9.png)
+
+![10](images/uc10.png)
 
 
 ## 2.2 Nicht-funktionale Anforderungen
@@ -1084,7 +1059,7 @@ Dass die zu speichernden Daten einen besonderen Schutzfaktor aufweisen, soll ein
 * Hyperledger
 * Webapp
 
-### 2.2.3 Qualitätsmerkmale (Fynn/Patrick)
+### 2.2.3 Qualitätsmerkmale
 
 Qualitätsmerkmal | sehr gut | gut | normal | nicht relevant
 ---|---|---|---|---
@@ -1109,7 +1084,7 @@ Stabilität |X|-|-|-|
 Prüfbarkeit |X|-|-|-|
 
 
-## 2.3 Graphische Benutzerschnittstelle (Fynn/Patrick)
+## 2.3 Graphische Benutzerschnittstelle
 
 ![Loginscreen](images/login.png "Loginscreen")
 
@@ -1134,6 +1109,7 @@ Prüfbarkeit |X|-|-|-|
 ![Rezeptdetails](images/apotheker_rezeptdetails.png "Rezeptdetails")
 
 ### Arbeitgeber: Mitarbeiterübersicht
+- UC-3.3: Public Key einsehen
 
 ![Mitarbeiterübersicht](images/arbeitgeber_mitarbeiterbersicht.png "Mitarbeiterübersicht")
 
@@ -1143,7 +1119,7 @@ Prüfbarkeit |X|-|-|-|
 ![Mitarbeiterakte](images/arbeitgeber_mitarbeiterakte.png "Mitarbeiterakte")
 
 
-### Arzt: Diagnostik:
+### Arzt: Diagnostik
 - UC-5: Behandlung festhalten
 - UC-5.1: Vorgang abbrechen
 - UC-5.2: Arztrezept hinzufügen
@@ -1159,93 +1135,88 @@ Prüfbarkeit |X|-|-|-|
 
 ![Diagnostik](images/arzt_diagnostik.png "Diagnostik")
 
-### Arzt: Smartrezept:
+### Arzt: Smartrezept
 - UC-6 Smartrezept ausstellen
 
 ![Smartrezept](images/arzt_smartrezept.png "Smartrezept")
 
-### Arzt: Arbeitsunfähigkeitszeitraum:
+### Arzt: Arbeitsunfähigkeitszeitraum
 - UC-7 Krankschreibung ausstellen
 
 ![Arbeitsunfähigkeitszeitraum](images/arzt_arbeitsunfhigkeitszeitraum.png "Arbeitsunfähigkeitszeitraum")
 
 
-### Arzt/Patient/Versicherung: Behandlungsdetails:
-- UC-4: Behandlung einsehen (Arzt/Versicherer)
-- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
-- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
-- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
-- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+### Arzt/Patient/Versicherung: Behandlungsdetails
+- UC-4: Behandlung einsehen
+- UC-4.1: Kategorie anzeigen
+- UC-4.2: Diagnose anzeigen
+- UC-4.3: Patientenname anzeigen
+- UC-4.4: Arztrezept anzeigen
 
 ![Behandlungsdetails](images/arztpatientversicherung_behandlungsdetails.png "Behandlungsdetails")
 
-### Arzt/Patient/Versicherung: Krankenakte:
-- UC-4.1: Kategorie anzeigen (Arzt/Versicherer)
-- UC-4.2: Diagnose anzeigen (Arzt/Versicherer)
-- UC-4.3: Patientenname anzeigen (Arzt/Versicherer)
-- UC-4.4: Arztrezept anzeigen (Arzt/Versicherer)
+### Arzt/Patient/Versicherung: Krankenakte
+- UC-4.1: Kategorie anzeigen
+- UC-4.2: Diagnose anzeigen
+- UC-4.3: Patientenname anzeigen
+- UC-4.4: Arztrezept anzeigen
 
 ![Krankenakte](images/arztpatientversicherung_krankenakte_.png "Krankenakte")
 
-### Arzt/Versicherung: Patientenübersicht:
+### Arzt/Versicherung: Patientenübersicht
 - UC-3.1: Aktenliste durchsuchen
 - UC-3.2: Patientennamen einsehen
-- UC-3.3: Public Key einsehen (Arzt)
+- UC-3.3: Public Key einsehen
 
 ![Patientenübersicht](images/arztversicherung_patientenbersicht.png "Patientenübersicht")
 
-### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner:
+### Arzt/Versicherung/Apotheker/Arbeitgeber: QR-Code-Scanner
 
 ![QR-Code-Scanner](images/arztversicherungapothekerarbeitgeber_qrcodescanner.png "QR-Code-Scanner")
 
-### Patient: Einsichtsanfragen:
+### Patient: Einsichtsanfragen
 
 ![Einsichtsanfragen](images/patient_einsichtsanfragen.png "Einsichtsanfragen")
 
-### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails:
+### Arzt/Versicherung/Apotheker/Arbeitgeber: Einsichtsanfragendetails
 - UC-3: Krankenakte einsehen (Arzt, Versicherer)
 
 ![Einsichtsanfragendetails](images/patient_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
-### Patient: Einsichtsanfragendetails:
+### Patient: Einsichtsanfragendetails
 - UC-1: Transparenz festlegen
 
 ![Einsichtsanfragendetails](images/arztversicherungapothekerarbeitgeber_einsichtsanfragendetails.png "Einsichtsanfragendetails")
 
-### Patient: Public Key/QR-Code:
+### Patient: Public Key/QR-Code
 
 ![QR-Code](images/patient_qrcode.png "QR-Code")
 
-### Zustandsdiagramm des Gesamtsystems:
+### Zustandsdiagramm des Gesamtsystems
 
 ![Komplettes Zustandsdiagramm](images/diagram_mockup_state.png "Komplettes Zustandsdiagramm")
 
-### Detailliertes Zustandsdiagramm der Patientenansicht:
+### Detailliertes Zustandsdiagramm der Patientenansicht
 
 ![Zustandsdiagramm Patientenansicht](images/diagram_patient.png "Zustandsdiagramm Patientenansicht")
 
-### Detailliertes Zustandsdiagramm der Arztansicht:
+### Detailliertes Zustandsdiagramm der Arztansicht
 
 ![Zustandsdiagramm Arztansicht](images/diagram_arzt.png "Zustandsdiagramm Arztansicht")
 
-### Detailliertes Zustandsdiagramm der Versichereransicht:
+### Detailliertes Zustandsdiagramm der Versichereransicht
 
 ![Zustandsdiagramm Versichereransicht](images/diagram_versicherer.png "Zustandsdiagramm Versichereransicht")
 
-### Detailliertes Zustandsdiagramm der Apothekeransicht:
+### Detailliertes Zustandsdiagramm der Apothekeransicht
 
 ![Zustandsdiagramm Apothekeransicht](images/diagram_apotheker.png "Zustandsdiagramm Apothekeransicht")
 
-### Detailliertes Zustandsdiagramm der Arbeitgeberansicht:
+### Detailliertes Zustandsdiagramm der Arbeitgeberansicht
 
 ![Zustandsdiagramm Arbeitgeberansicht](images/diagram_arbeitgeber.png "Zustandsdiagramm Arbeitgeberansicht")
 
-## 2.4 Anforderungen im Detail (Alle)
-* User Stories mit Akzeptanzkritierien
-* Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
-* Strukturierung der User Stories in funktionale Gruppen
-
-### Schablone für User Stories
+## 2.4 Anforderungen im Detail
 
 |  ****Als** ** | ****möchte ich** ** | ** **so dass** ** | ** **Akzeptanz** ** | **Optionalität** |
 |  ------ | ------ | ------ | ------ | :------: |
@@ -1264,20 +1235,59 @@ Prüfbarkeit |X|-|-|-|
 |  Versicherer, Arbeitgeber, Apotheker, Arzt | Hinweis über Einsichtsverweigerung | Grund der Verweigerung einsehen | Grund wurde nachvollzogen | should |
 |  Jeder | Authentifizieren | Rolle im System identifiziert | Teilnahme am System | must |
 
-# 3 Technische Beschreibung (Nils/Kevin/Cem)
+# 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
 ![Systemarchitekturdiagramm](images/Systemarchitektur.png "Systemarchitekturdiagramm")
 
+Abweichend von der Systemarchitektur, wird für den Proof of Concept und die
+Präsentation ein Fabric Netzwerk bestehend aus einem Peer, Ordering Service
+und MSP mit der Standard Policy Konfiguration aufgesetzt. Die Verteilung der
+Fabric-Komponenten kann jedoch ohne weitere Auswirkung auf die Applikation, wie
+oben dargestellt vorgenommen werden.
+
+
 ### Schnittstellenbeschreibung
-Das Hyperledger Fabric Framework stellt bereits eine gRPC-Schnittstelle zu den
-Peers bereit. Diese Schnittstelle wird von der Applikation verwendet, um Daten
-aus dem Distributed Ledger abzufragen bzw. zu aktualisieren. Mittels Protocol
-Buffers werden die Daten in ein Binäres Datenformat serialisiert und an den Peer
-übertragen.
+Für die Interaktion mit dem Distributed Ledger stellt das Hyperledger Fabric
+Framework ein SDK für NodeJs bereit. Dieses nutzt Protocol Buffers und gRPC um
+mit den Knoten im Netzwerk zu kommunizieren. Da das SDK jedoch mit dem
+Dateisystem arbeitet, kann es nicht direkt im Browser ausgeführt werden.
+Für diesen Zweck wird zwischen der Web-Applikation und dem Distributed Ledger
+eine REST-Schnittstelle als Proxy implementiert, mit der die indirekte
+Kommunikation der beiden Module ermöglicht wird.
 
 ## 3.2 Softwarearchitektur
 ![Softwarearchitektur](images/Softwarearchitektur.png "Softwarearchitektur")
+
+### Chaincode (Business Logic)
+Beinhaltet alle Funktionalitäten, die für den Zugriff auf die Patientenakte im
+Distributed Ledger notwendig sind.
+
+### Application Logic
+Diese Komponente ist für die transparente Interaktion mit dem Chaincode und der
+Farbric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
+definierten Schritte, um Daten der Patientenakte im Distributed Ledger zu
+aktualisieren.
+
+### REST API
+Stellt die Funktionalitäten der Application Logic über URLs bereit und nutzt die
+HTTP-Methoden um Daten im Distributed Ledger zu manipulieren. Diese
+Schnittstelle dient der Web Application als Backend.
+
+### Chain Service
+Kapselt die REST API Logik und stellt den Nutzer einen Angular-Service zur
+Interaktion mit der REST Schnittstelle bereit.
+
+### Storage Service
+Nutzt den Local- bzw. Session-Storage im Browser, um Informationen für die
+Authentifizierung zu verwalten und stellt diese als Service für die restlichen
+Komponenten bereit.
+
+### Crypto Service
+Ist verantwortlich für die Ver- und Entschlüsselung der Patientendaten.
+
+### Frontend
+Beinhaltet die Komponenten und Views für das Frontend.
 
 ## 3.3 Datenmodell
 
@@ -1294,10 +1304,8 @@ benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob
 Informationen herrausgeben möchte.
 
 ![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
-* Aktivitätsdiagramme für relevante Use Cases
-* Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
-Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurden für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welches Teil von dem Chaincode übernommen wird.
+Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welcher Teil von dem Chaincode übernommen wird.
 
 ### Usecase 1: Transparenz festlegen
 ![UC1](images/UC-1_Aktivitätsdiagramm.png "UC1")
@@ -1340,44 +1348,60 @@ Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurden f
 
 ## 4.1 Annahmen
 
-### 4.1.1 Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-* Verlagerung der Speicherung patientenspezifischer Daten in eine Blockchain
+Um die Sicherheit der patientenbezogenen Daten zu gewährleisten, ist es
+unabdingbar, dass der Private-Key zu keinem Zeitpunkt den Hoheitsbereich des Patienten verlässt. Dies wird sichergestellt, indem alle von der
+Ver- und Entschlüsselung betroffenen Komponenten in der Client Applikation implementiert werden.
 
-### 4.1.2 Verwendete Technologien
+### Technologien
+
+#### Distributed Ledger / Smart Contract
+* Programmiersprachen
+  * JavaScript
+* Frameworks / Libraries
+  * Hyperledger Fabric
+  * NodeJS
+  * Fabric Shim
+
 #### Backend
-* Blockchain: Hyperledger Fabric Framework
-* Smart Contracts: JavaScript
+* Programmiersprachen
+  * Javascript
+* Frameworks / Libraries
+  * NodeJS
+  * Fabric Node SDK
+  * Express.JS
 
 #### Frontend
-* Webapplikation mit Shared Codebase für alle Plattformen
-* Frontend-Framework: Angular (>=2)
-* UI Framework: Angular Material
-#### Programmiersprachen
-* TypeScript
-* JavaScript
-* node.js
-* HTML5
+* Programmiersprachen
+  * Typescript
+* Frameworks / Libraries
+  * Angular
+  * Angular Material Design
 
-### 4.1.3 Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen
+#### Entwicklung / Integration
 
 * Versionsverwaltung: Git
-* Entwicklungsumgebungen (IDEs): VSCode, WebStorm
+* Entwicklungsumgebungen (IDEs): VSCode, Atom, WebStorm
 * Repository: Github
-* Deployment: Github Pages
-
-### 4.1.4 Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+* Deployment: Github Pages, Azure
 
 ## 4.2 Verantwortlichkeiten
-### 4.2.1 Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-### 4.2.2 Rollendefinition und Zuordnung
-#### Projektleiter
-Überwacht den Projektfortschritt und stellt eine reibungslose Kommunikation zwischen den einzelnen Entwicklungsbereichen sicher.
+
+### Komponenten und Module
+
+| Komponente / Modul | Name |
+|----------|-----------|
+| Chaincode (Business Logic) | Cem Basoglu |
+| Application Logic | Patrick Starzynski |
+| REST API | Matthias Kersting |
+| Chain Service | Nils Kirchhof |
+| Storage Service | Kevin Schima |
+| Crypto Service | Mario Cichonczyk |
+| Frontend | Fynn Klöpper |
+
+### Rollen
 
 #### Softwarearchitekt
 Entwirft den Aufbau von Softwaresystemen und trifft grundlegende Entscheidungen über das Zusammenspiel ihrer diversen Komponenten.
-
-#### Test-Entwickler
-Entwickelt Modultests, Systemtests und Integrationstests um die spezifikationsgerechte, fehlerfreie Funktion einzelner Module, Modulgruppen und des ganzen System sicherzustellen.
 
 #### Frontend-Entwickler
 Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
@@ -1385,38 +1409,43 @@ Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layou
 #### Backend-Entwickler
 Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und für die Anwendung bereitgestellt.
 
+#### Chaincode-Entwickler
+Entwickelt Programmlogik die auf Hyperledger Nodes ausgeführt wird und mit der Blockchain interagiert.
+
+#### DevOps-Spezialist
+Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koordination zwischen den Projektteilnehmern ermöglicht.
+
+#### Zertifikat-Spezialist
+Erzeugt und verwaltet Zertifikate der System-Komponenten und Projektteilnehmer
+für die Interaktion mit dem Distributed Ledger Framework.
+
+#### Facilitator
+Moderiert Gruppendiskussionen und hält das kollektive Arbeitsklima zielgerichtet.
+
+#### Schedule-Manager
+Evaluiert den Projektfortschritt gemessen an der Projektplanung.
+
+### Rollenzuordnung
+
 | Name     | Rolle     |
 |----------|-----------|
-| Cem      |           |
-| Fynn     |           |
-| Kevin    |           |
-| Mario    |           |
-| Matthias |           |
-| Nils     |           |
-| Patrick  |           |
+| Cem Basoglu | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
+| Fynn Klöpper | Frontend-Entwickler, Schedule-Manager |
+| Kevin Schima | Backend-Entwickler, Chaincode-Entwickler, DevOps-Spezialist |
+| Mario Cichonczyk | Backend-Entwickler, Facilitator |
+| Matthias Kersting | Backend-Entwickler |
+| Nils Kirchhof | Frontend-Entwickler, Backend-Entwickler |
+| Patrick Starzynski | Backend-Entwickler, Frontend-Entwickler |
 
 ## 4.3 Grober Projektplan
 ### Meilensteine
-* KW 21 (21.06)
+* KW 21 (21.05)
   * Abgabe Pflichtenheft
-* KW 22 (28.06) / M1
-  * Einarbeitung: Frameworks
-* KW 23 (04.07) / M2
+* KW 22 (28.05) / M1
+  * Projekt aufsetzen
+* KW 23 (04.06) / M2
   * SW-Architektur
-* KW 24 (11.07) / M3
+* KW 25 (18.06) / M3
   * Implementierung: Funktionale Anforderungen
-* KW 25 (18.07) / M4
-  * Softwaretests abgeschlossen
-  * Beginn Projektdokumentation
-* KW 26 (25.07)
+* KW 26 (25.06)
   * Präsentation / Software-Demo
-
-# 5 Anhänge
-
-## 5.1 Glossar
-* Definitionen, Abkürzungen, Begriffe
-
-## 5.2 Referenzen
-* Handbücher, Gesetze
-
-## 5.3 Index
