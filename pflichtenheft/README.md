@@ -1419,6 +1419,12 @@ Entwickelt Prozesse, Tools und legt eine Infrastruktur an, die eine bessere Koor
 Erzeugt und verwaltet Zertifikate der System-Komponenten und Projektteilnehmer
 für die Interaktion mit dem Distributed Ledger Framework.
 
+#### Facilitator
+Moderiert Gruppendiskussionen und hält das kollektive Arbeitsklima zielgerichtet.
+
+#### Schedule-Manager
+Evaluiert den Projektfortschritt gemessen an der Projektplanung.
+
 ### Rollenzuordnung
 
 | Name     | Rolle     |
@@ -1426,7 +1432,7 @@ für die Interaktion mit dem Distributed Ledger Framework.
 | Cem Basoglu | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
 | Fynn Klöpper | Frontend-Entwickler |
 | Kevin Schima | Backend-Entwickler, Chaincode-Entwickler, DevOps-Spezialist |
-| Mario Cichonczyk | Backend-Entwickler |
+| Mario Cichonczyk | Backend-Entwickler, Facilitator |
 | Matthias Kersting | Backend-Entwickler |
 | Nils Kirchhof | Frontend-Entwickler, Backend-Entwickler |
 | Patrick Starzynski | Backend-Entwickler, Frontend-Entwickler |
