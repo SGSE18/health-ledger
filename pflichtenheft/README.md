@@ -1340,9 +1340,17 @@ Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde f�
 
 ## 3.5 Entwurf
 
+### Klassendiagramme
+
+#### Chaincode
+
+![Klassendiagramm - Chaincode](images/klassendiagramm_chaincode.png "Klassendiagramm - Chaincode")
+
+#### Application Logic
+
+![Klassendiagramm - Application Logic](images/klassendiagramm_application_logic.png "Klassendiagramm - Application Logic")
 
 
-![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
 
 # 4 Projektorganisation
 
