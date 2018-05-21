@@ -1429,7 +1429,7 @@ für die Interaktion mit dem Distributed Ledger Framework.
 | Mario Cichonczyk | Backend-Entwickler |
 | Matthias Kersting | Backend-Entwickler |
 | Nils Kirchhof | Frontend-Entwickler, Backend-Entwickler |
-| Patrick Starzynski | Frontend-Entwickler |
+| Patrick Starzynski | Backend-Entwickler, Frontend-Entwickler |
 
 ## 4.3 Grober Projektplan
 ### Meilensteine
