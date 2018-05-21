@@ -1265,7 +1265,7 @@ Distributed Ledger notwendig sind.
 
 ### Application Logic
 Diese Komponente ist für die transparente Interaktion mit dem Chaincode und der
-Farbric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
+Fabric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
 definierten Schritte, um Daten der Patientenakte im Distributed Ledger zu
 aktualisieren.
 
@@ -1441,11 +1441,35 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 ### Meilensteine
 * KW 21 (21.05)
   * Abgabe Pflichtenheft
-* KW 22 (28.05) / M1
-  * Projekt aufsetzen
-* KW 23 (04.06) / M2
-  * SW-Architektur
-* KW 25 (18.06) / M3
-  * Implementierung: Funktionale Anforderungen
-* KW 26 (25.06)
+* KW 22 (28.05) / Projekt aufsetzen
+  * Repository Struktur
+  * Einrichtung Hyperledger Fabric
+    * Blockchain-as-a-Service oder Docker (lokal)
+    * ggf. Docker Compose Script
+    * Script für Chaincode Deployment
+  * Zertifikate (Identities)
+    * Script für Generierung
+    * Ablage/Verwaltung im Repository
+  * Projekterstellung und CD-Scripte (Travis)
+    * Backend -> Azure
+    * Frontend -> Github Pages
+  * Recherche und Ausarbeitung
+    * X509 Zertifikate, Attribute/Erweiterungen, Datenformate
+    * Verschlüsselungsverfahren für Patientenakte
+    * Detaillierte Klassendiagramme
+    * Einarbeitung in die Frameworks
+    * REST API Beschreibung (ggf. Swagger)
+* KW 23 (04.06) / Mocks & Implementierung #1
+  * Mocks für Layer-Schnittstellen
+    * Chain Service
+    * Storage Service
+    * Crypto Service
+    * Application Logic
+  * Implementierung #1
+* KW 25 (18.06) / Implementierung #2 & Integrationstests
+  * Implementierung #2
+  * manuelle BigBang-Integration-Tests des Implementierungsfortschritts
+* KW 26 (25.06) / Implementierung #3 & Abnahmetests
+  * Implementierung #3 (Final)
+  * manuelle Abnahmetestss
   * Präsentation / Software-Demo
