@@ -1430,7 +1430,7 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 | Name     | Rolle     |
 |----------|-----------|
 | Cem Basoglu | Softwarearchitekt, Chaincode-Entwickler, DevOps-Spezialist |
-| Fynn Klöpper | Frontend-Entwickler |
+| Fynn Klöpper | Frontend-Entwickler, Schedule-Manager |
 | Kevin Schima | Backend-Entwickler, Chaincode-Entwickler, DevOps-Spezialist |
 | Mario Cichonczyk | Backend-Entwickler, Facilitator |
 | Matthias Kersting | Backend-Entwickler |
