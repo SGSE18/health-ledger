@@ -1294,17 +1294,6 @@ Beinhaltet die Komponenten und Views für das Frontend.
 ![Datenmodell](images/Benutzermodel_Behandelungsakte.png "Datenmodell der Krankenakte")
 
 ## 3.4 Abläufe
-Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
-der Blockchain interagiert.
-
-![Behandelung erstellen](images/Aktivitätsdiagram_Behandelung_erstellt.png "Behandelung erstellen")
-
-Im folgenden Usecase wird dargestellt, wie ein User wie beispielsweise die Krankenkasse an die
-benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob er die benötigten
-Informationen herrausgeben möchte.
-
-![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
-
 Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welcher Teil von dem Chaincode übernommen wird.
 
 ### Usecase 1: Transparenz festlegen
@@ -1350,7 +1339,21 @@ Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde f�
 
 ![Klassendiagramm - Application Logic](images/klassendiagramm_application_logic.png "Klassendiagramm - Application Logic")
 
+### Sequenzdiagramme
 
+#### Behandlung erstellen
+Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
+der Blockchain interagiert.
+
+![Behandelung erstellen](images/Aktivitätsdiagram_Behandelung_erstellt.png "Behandelung erstellen")
+
+
+#### Einsichtsanfrage
+Im folgenden Usecase wird dargestellt, wie ein User wie beispielsweise die Krankenkasse an die
+benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob er die benötigten
+Informationen herrausgeben möchte.
+
+![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
 
 # 4 Projektorganisation
 
