@@ -20,17 +20,17 @@ Patrick Starzynski
 # Inhaltsverzeichnis
 
 - [1 Einführung](#1-einführung)
-  - [1.1 Beschreibung](#11-beschreibung-mario)
+  - [1.1 Beschreibung](#11-beschreibung)
   - [1.2 Ziele](#12-ziele)
 - [2 Anforderungen](#2-anforderungen)
   - [2.1 Funktionale Anforderungen](#21-funktionale-anforderungen)
   - [2.2 Nicht-funktionale Anforderungen](#22-nicht-funktionale-anforderungen)
     - [2.2.1 Rahmenbedingungen](#221-rahmenbedingungen)
     - [2.2.2 Betriebsbedingungen](#222-betriebsbedingungen)
-    - [2.2.3 Qualitätsmerkmale](#223-qualitätsmerkmale-fynnpatrick)
-  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle-fynnpatrick)
-  - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail-alle)
-- [3 Technische Beschreibung](#3-technische-beschreibung-nilskevincem)
+    - [2.2.3 Qualitätsmerkmale](#223-qualitätsmerkmale)
+  - [2.3 Graphische Benutzerschnittstelle](#23-graphische-benutzerschnittstelle)
+  - [2.4 Anforderungen im Detail](#24-anforderungen-im-detail)
+- [3 Technische Beschreibung](#3-technische-beschreibung)
   - [3.1 Systemübersicht](#31-systemübersicht)
   - [3.2 Softwarearchitektur](#32-softwarearchitektur)
   - [3.3 Datenmodell](#33-datenmodell)
@@ -1265,7 +1265,7 @@ Distributed Ledger notwendig sind.
 
 ### Application Logic
 Diese Komponente ist für die transparente Interaktion mit dem Chaincode und der
-Farbric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
+Fabric Systemkomponenten verantwortlich. Dazu kapselt es alle im Fabric-Workflow
 definierten Schritte, um Daten der Patientenakte im Distributed Ledger zu
 aktualisieren.
 
@@ -1294,17 +1294,6 @@ Beinhaltet die Komponenten und Views für das Frontend.
 ![Datenmodell](images/Benutzermodel_Behandelungsakte.png "Datenmodell der Krankenakte")
 
 ## 3.4 Abläufe
-Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
-der Blockchain interagiert.
-
-![Behandelung erstellen](images/Aktivitätsdiagram_Behandelung_erstellt.png "Behandelung erstellen")
-
-Im folgenden Usecase wird dargestellt, wie ein User wie beispielsweise die Krankenkasse an die
-benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob er die benötigten
-Informationen herrausgeben möchte.
-
-![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
-
 Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde für jeden der Use-Cases ein Aktivitätsdiagramm erstellt. Diese sollen zeigen, welcher Teil des Use-Cases auf dem Webclient ausgeführt wird und welcher Teil von dem Chaincode übernommen wird.
 
 ### Usecase 1: Transparenz festlegen
@@ -1340,9 +1329,31 @@ Um über die einzelnen Use-Cases einen besseren Überblick zu erlangen, wurde f�
 
 ## 3.5 Entwurf
 
+### Klassendiagramme
+
+#### Chaincode
+
+![Klassendiagramm - Chaincode](images/klassendiagramm_chaincode.png "Klassendiagramm - Chaincode")
+
+#### Application Logic
+
+![Klassendiagramm - Application Logic](images/klassendiagramm_application_logic.png "Klassendiagramm - Application Logic")
+
+### Sequenzdiagramme
+
+#### Behandlung erstellen
+Dieses Aktivitätsdiagramm soll zeigen, wie der Arzt bei der Erstellung einer Behandelung mit
+der Blockchain interagiert.
+
+![Behandelung erstellen](images/Aktivitätsdiagram_Behandelung_erstellt.png "Behandelung erstellen")
 
 
-![Chaincode Modell](images/Benutzermodel_Chaincode.png "Chaincode Modell")
+#### Einsichtsanfrage
+Im folgenden Usecase wird dargestellt, wie ein User wie beispielsweise die Krankenkasse an die
+benötigten Informationen gelangt. Dabei kann der Patient selbst entscheiden, ob er die benötigten
+Informationen herrausgeben möchte.
+
+![Informationen abfragen](images/Aktivitätsdiagram_Einsicht_erhalten.png "Informationen abfragen")
 
 # 4 Projektorganisation
 
@@ -1441,11 +1452,35 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 ### Meilensteine
 * KW 21 (21.05)
   * Abgabe Pflichtenheft
-* KW 22 (28.05) / M1
-  * Projekt aufsetzen
-* KW 23 (04.06) / M2
-  * SW-Architektur
-* KW 25 (18.06) / M3
-  * Implementierung: Funktionale Anforderungen
-* KW 26 (25.06)
+* KW 22 (28.05) / Projekt aufsetzen
+  * Repository Struktur
+  * Einrichtung Hyperledger Fabric
+    * Blockchain-as-a-Service oder Docker (lokal)
+    * ggf. Docker Compose Script
+    * Script für Chaincode Deployment
+  * Zertifikate (Identities)
+    * Script für Generierung
+    * Ablage/Verwaltung im Repository
+  * Projekterstellung und CD-Scripte (Travis)
+    * Backend -> Azure
+    * Frontend -> Github Pages
+  * Recherche und Ausarbeitung
+    * X509 Zertifikate, Attribute/Erweiterungen, Datenformate
+    * Verschlüsselungsverfahren für Patientenakte
+    * Detaillierte Klassendiagramme
+    * Einarbeitung in die Frameworks
+    * REST API Beschreibung (ggf. Swagger)
+* KW 23 (04.06) / Mocks & Implementierung #1
+  * Mocks für Layer-Schnittstellen
+    * Chain Service
+    * Storage Service
+    * Crypto Service
+    * Application Logic
+  * Implementierung #1
+* KW 25 (18.06) / Implementierung #2 & Integrationstests
+  * Implementierung #2
+  * manuelle BigBang-Integration-Tests des Implementierungsfortschritts
+* KW 26 (25.06) / Implementierung #3 & Abnahmetests
+  * Implementierung #3 (Final)
+  * manuelle Abnahmetestss
   * Präsentation / Software-Demo
