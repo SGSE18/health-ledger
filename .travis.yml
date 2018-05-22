@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+branches:
+  only:
+    - master
+cache:
+  directories:
+  - node_modules
+before_script:
+  - cd frontend
+script:
+  - npm install
+  - ng build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: frontend/dist/health-ledger-frontend
+  on:
+    branch: master
