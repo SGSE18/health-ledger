@@ -11,7 +11,7 @@ before_script:
   - cd frontend
 script:
   - npm install
-  - ng build
+  - ng build --base-href /health-ledger/
 deploy:
   provider: pages
   skip_cleanup: true
