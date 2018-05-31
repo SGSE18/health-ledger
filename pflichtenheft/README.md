@@ -1453,22 +1453,23 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 * KW 21 (21.05)
   * Abgabe Pflichtenheft
 * KW 22 (28.05) / Projekt aufsetzen
-  * Repository Struktur
-  * Einrichtung Hyperledger Fabric
-    * Blockchain-as-a-Service oder Docker (lokal)
-    * ggf. Docker Compose Script
-    * Script für Chaincode Deployment
-  * Zertifikate (Identities)
-    * Script für Generierung
-    * Ablage/Verwaltung im Repository
+  * ~~Repository Struktur~~
+  * ~~Einrichtung Hyperledger Fabric~~
+    * ~~Blockchain-as-a-Service oder Docker (lokal)~~
+    * ~~ggf. Docker Compose Script~~
+    * ~~Script für Chaincode Deployment~~
+  * ~~Zertifikate (Identities)~~
+    * ~~Script für Generierung~~
+    * ~~Ablage/Verwaltung im Repository~~
   * Projekterstellung und CD-Scripte (Travis)
-    * Backend -> Azure
-    * Frontend -> Github Pages
+    * ~~Backend -> Azure~~
+    * ~~Frontend -> Github Pages~~
+    * Chaincode -> Docker on Azure
   * Recherche und Ausarbeitung
-    * X509 Zertifikate, Attribute/Erweiterungen, Datenformate
+    * ~~X509 Zertifikate, Attribute/Erweiterungen, Datenformate~~
     * Verschlüsselungsverfahren für Patientenakte
     * Detaillierte Klassendiagramme
-    * Einarbeitung in die Frameworks
+    * ~~Einarbeitung in die Frameworks~~
     * REST API Beschreibung (ggf. Swagger)
 * KW 23 (04.06) / Mocks & Implementierung #1
   * Mocks für Layer-Schnittstellen
