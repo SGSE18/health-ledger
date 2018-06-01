@@ -1451,7 +1451,7 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 ## 4.3 Grober Projektplan
 ### Meilensteine
 * KW 21 (21.05)
-  * Abgabe Pflichtenheft
+  * ~~Abgabe Pflichtenheft~~
 * KW 22 (28.05) / Projekt aufsetzen
   * ~~Repository Struktur~~
   * ~~Einrichtung Hyperledger Fabric~~
@@ -1467,7 +1467,7 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
     * Chaincode -> Docker on Azure
   * Recherche und Ausarbeitung
     * ~~X509 Zertifikate, Attribute/Erweiterungen, Datenformate~~
-    * Verschlüsselungsverfahren für Patientenakte
+    * ~~Verschlüsselungsverfahren für Patientenakte~~
     * Detaillierte Klassendiagramme
     * ~~Einarbeitung in die Frameworks~~
     * REST API Beschreibung (ggf. Swagger)
