@@ -12,6 +12,7 @@ Mit Hilfe der verteilten Blockchain-Technologie und modernster Kryptoverfahren w
 ## Backend
 * Project-Repository: [Github](https://github.com/SGSE18/health-ledger-backend)
 * Url: [Heroku](https://health-ledger.herokuapp.com/)
+* Swagger Rest Api Dokumentation: [Swagger](https://app.swaggerhub.com/apis/health-ledger-rest/Health-Ledger-RestService/1.0.0)
 
 ## Chaincode
 * Project-Repository:
