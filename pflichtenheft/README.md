@@ -1470,12 +1470,12 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
     * ~~Verschlüsselungsverfahren für Patientenakte~~
     * Detaillierte Klassendiagramme
     * ~~Einarbeitung in die Frameworks~~
-    * REST API Beschreibung (ggf. Swagger)
+    * ~~REST API Beschreibung (ggf. Swagger)~~
 * KW 23 (04.06) / Mocks & Implementierung #1
   * Mocks für Layer-Schnittstellen
     * Chain Service
     * Storage Service
-    * Crypto Service
+    * ~~Crypto Service~~
     * Application Logic
   * Implementierung #1
 * KW 25 (18.06) / Implementierung #2 & Integrationstests
