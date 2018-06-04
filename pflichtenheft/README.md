@@ -1474,10 +1474,10 @@ Evaluiert den Projektfortschritt gemessen an der Projektplanung.
 * KW 23 (04.06) / Mocks & Implementierung #1
   * Mocks für Layer-Schnittstellen
     * Chain Service
-    * Storage Service
+    * ~~Storage Service~~
     * ~~Crypto Service~~
     * Application Logic
-  * Implementierung #1
+  * ~~Implementierung #1~~
 * KW 25 (18.06) / Implementierung #2 & Integrationstests
   * Implementierung #2
   * manuelle BigBang-Integration-Tests des Implementierungsfortschritts
